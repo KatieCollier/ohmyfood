@@ -2,16 +2,16 @@
 /* Font for omf logo */
 @font-face {
   font-family: "colaborate-mediumregular";
-  src: url("fonts/ColabMed-webfont.eot");
-  src: url("fonts/ColabMed-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/ColabMed-webfont.woff2") format("woff2"), url("fonts/ColabMed-webfont.woff") format("woff"), url("fonts/ColabMed-webfont.ttf") format("truetype"), url("fonts/ColabMed-webfont.svg#colaborate-mediumregular") format("svg");
+  src: url("fonts/colaborate_medium_macroman/ColabMed-webfont.eot");
+  src: url("fonts/colaborate_medium_macroman/ColabMed-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/colaborate_medium_macroman/ColabMed-webfont.woff2") format("woff2"), url("fonts/colaborate_medium_macroman/ColabMed-webfont.woff") format("woff"), url("fonts/colaborate_medium_macroman/ColabMed-webfont.ttf") format("truetype"), url("fonts/colaborate_medium_macroman/ColabMed-webfont.svg#colaborate-mediumregular") format("svg");
   font-weight: normal;
   font-style: normal;
 }
 /* Font for main omf site */
 @font-face {
   font-family: "kanitregular";
-  src: url("fonts/kanit-regular-webfont.eot");
-  src: url("fonts/kanit-regular-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/kanit-regular-webfont.woff2") format("woff2"), url("fonts/kanit-regular-webfont.woff") format("woff"), url("fonts/kanit-regular-webfont.ttf") format("truetype"), url("fonts/kanit-regular-webfont.svg#kanitregular") format("svg");
+  src: url("fonts/kanit_regular_macroman/kanit-regular-webfont.eot");
+  src: url("fonts/kanit_regular_macroman/kanit-regular-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/kanit_regular_macroman/kanit-regular-webfont.woff2") format("woff2"), url("fonts/kanit_regular_macroman/kanit-regular-webfont.woff") format("woff"), url("fonts/kanit_regular_macroman/kanit-regular-webfont.ttf") format("truetype"), url("fonts/kanit_regular_macroman/kanit-regular-webfont.svg#kanitregular") format("svg");
   font-weight: normal;
   font-style: normal;
 }
@@ -25,15 +25,23 @@ body {
   box-sizing: border-box;
 }
 
+.btn {
+  padding: 2rem;
+}
+
 .header {
+  height: 240px;
   background-color: #579c87;
-  color: #fdcb46;
-  text-align: center;
-  font-family: "colaborate-mediumregular";
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 .header h1 {
   font-size: 7rem;
-  padding: 3rem;
+  color: #fdcb46;
+  font-family: "colaborate-mediumregular";
+  text-align: center;
+  letter-spacing: -10px;
 }
 
 .main-txt {
@@ -49,14 +57,14 @@ body {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-around;
-  margin-bottom: 5vh;
+  margin-bottom: 90px;
 }
 
 .resto {
   width: 535px;
   height: 760px;
   border: 2px black solid;
-  margin-top: 10%;
+  margin: 60px 15px 0px 15px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -74,16 +82,17 @@ body {
   background-color: #579c87;
   color: #fdcb46;
   text-align: center;
-  font-family: site-font;
+  font-family: "kanitregular";
   width: 660px;
   height: 120px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   margin-bottom: 90px;
+  border-radius: 20px;
 }
 .soon p {
-  font-size: 3rem;
+  font-size: 4rem;
 }
 
 .footer {
@@ -95,8 +104,8 @@ body {
   background-color: #579c87;
   color: #fdcb46;
   text-align: center;
-  font-family: site-font;
-  font-size: 2rem;
+  font-family: "kanitregular";
+  font-size: 3rem;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -6,5 +6,5 @@
 
 @mixin omf-txt-site {
     @include omf-txt-clr;
-    font-family: site-font;
+    font-family: $site-font;
 }
