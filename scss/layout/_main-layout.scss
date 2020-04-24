@@ -38,6 +38,41 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    box-shadow: $shadow-size $shadow-size $shadow-size rgba(0,0,0, $shadow-opacity),
+                -1*$shadow-size $shadow-size $shadow-size rgba(0,0,0, $shadow-opacity),
+                -1*$shadow-size -1*$shadow-size $shadow-size rgba(0,0,0, $shadow-opacity),
+                $shadow-size -1*$shadow-size $shadow-size rgba(0,0,0, $shadow-opacity);
+    &--note{
+        background-color: $note-bg-clr;
+        color: $note-txt-clr;
+    }
+    &--chic{
+        background-color: $chic-bg-clr;
+        color: $chic-txt-clr-1;
+        h1{
+            background: linear-gradient(to right bottom, $chic-txt-clr-1 0%, $chic-txt-clr-2 100%);
+	        -webkit-background-clip: text;
+	        -webkit-text-fill-color: transparent;
+        }
+    }
+    &--delice{
+        background-color: $delice-bg-clr;
+        color: $delice-txt-clr-2;
+        h1{
+            background: linear-gradient(to right bottom, $delice-txt-clr-1 0%, $delice-txt-clr-2 100%);
+	        -webkit-background-clip: text;
+	        -webkit-text-fill-color: transparent;
+        }
+    }
+    &--palette{
+        background-color: $palette-bg-clr;
+        color: $palette-txt-clr-2;
+        h1{
+            background: linear-gradient(to right bottom, $palette-txt-clr-1 0%, $palette-txt-clr-2 100%);
+	        -webkit-background-clip: text;
+	        -webkit-text-fill-color: transparent;
+        }
+    }
 }
 
 .resto_name{

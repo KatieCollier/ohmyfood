@@ -69,6 +69,38 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  box-shadow: 7px 7px 7px rgba(0, 0, 0, 0.1), -7px 7px 7px rgba(0, 0, 0, 0.1), -7px -7px 7px rgba(0, 0, 0, 0.1), 7px -7px 7px rgba(0, 0, 0, 0.1);
+}
+.resto--note {
+  background-color: #fcdfdb;
+  color: #3c1218;
+}
+.resto--chic {
+  background-color: #fff5fe;
+  color: #c77412;
+}
+.resto--chic h1 {
+  background: linear-gradient(to right bottom, #c77412 0%, #905bfd 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.resto--delice {
+  background-color: #f9f9f9;
+  color: #0887fb;
+}
+.resto--delice h1 {
+  background: linear-gradient(to right bottom, #0431df 0%, #0887fb 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.resto--palette {
+  background-color: #fdfffd;
+  color: #bfff7e;
+}
+.resto--palette h1 {
+  background: linear-gradient(to right bottom, #3d9339 0%, #bfff7e 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .resto_name {
