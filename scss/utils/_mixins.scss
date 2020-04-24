@@ -1,4 +1,10 @@
 @mixin omf-txt-clr {
     background-color: $main-bg-color;
     color: $main-txt-color;
+    text-align: center;
+}
+
+@mixin omf-txt-site {
+    @include omf-txt-clr;
+    font-family: site-font;
 }

@@ -17,15 +17,86 @@
 }
 /*Establishing fonts*/
 /* Colours */
-.full-txt {
-  max-width: 1200px;
+/* sizes for the restaurant squares on the home page*/
+body {
+  width: 100%;
+  max-width: 1500px;
+  margin: auto;
   box-sizing: border-box;
 }
 
 .header {
   background-color: #579c87;
   color: #fdcb46;
+  text-align: center;
   font-family: "colaborate-mediumregular";
+}
+.header h1 {
+  font-size: 7rem;
+  padding: 3rem;
+}
+
+.main-txt {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.squares {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-bottom: 5vh;
+}
+
+.resto {
+  width: 535px;
+  height: 760px;
+  border: 2px black solid;
+  margin-top: 10%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.resto_name {
+  width: 420px;
+  height: 210px;
+  text-align: center;
+  border: 2px black solid;
+}
+
+.soon {
+  background-color: #579c87;
+  color: #fdcb46;
+  text-align: center;
+  font-family: site-font;
+  width: 660px;
+  height: 120px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 90px;
+}
+.soon p {
+  font-size: 3rem;
+}
+
+.footer {
+  height: 140px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #579c87;
+  color: #fdcb46;
+  text-align: center;
+  font-family: site-font;
+  font-size: 2rem;
 }
 
 /*# sourceMappingURL=style.css.map */
