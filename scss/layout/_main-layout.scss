@@ -1,25 +1,25 @@
-.header{
-    height: 240px;
+header{
+    height: 100px;
     background-color: $main-bg-color;
     display: flex;
     flex-direction: column;
     justify-content: center;
     h1{
-        font-size: 7rem;
+        font-size: 5rem;
         color: $main-txt-color;
         font-family: $title-font;
         text-align: center;
-        letter-spacing: -10px;
+        letter-spacing: -8px;
     }
 }
 
-.main-txt{
+main{
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.squares{
+article{
     width: 80%;
     margin: auto;
     display: flex;
@@ -38,6 +38,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    font-size: 2rem;
     box-shadow: $shadow-size $shadow-size $shadow-size rgba(0,0,0, $shadow-opacity),
                 -1*$shadow-size $shadow-size $shadow-size rgba(0,0,0, $shadow-opacity),
                 -1*$shadow-size -1*$shadow-size $shadow-size rgba(0,0,0, $shadow-opacity),
@@ -45,63 +46,74 @@
     &--note{
         background-color: $note-bg-clr;
         color: $note-txt-clr;
+        font-family: $note-menu-font;
+        text-transform: uppercase;
+        h2{
+            font-family: $note-font;
+            text-transform: initial;
+        }
     }
     &--chic{
         background-color: $chic-bg-clr;
         color: $chic-txt-clr-1;
-        h1{
+        font-family: $chic-menu-font;
+        h2{
             background: linear-gradient(to right bottom, $chic-txt-clr-1 0%, $chic-txt-clr-2 100%);
 	        -webkit-background-clip: text;
-	        -webkit-text-fill-color: transparent;
+            -webkit-text-fill-color: transparent;
+            font-family: $chic-font;
         }
     }
     &--delice{
         background-color: $delice-bg-clr;
         color: $delice-txt-clr-2;
-        h1{
+        font-family: $del-pal-menu;
+        h2{
             background: linear-gradient(to right bottom, $delice-txt-clr-1 0%, $delice-txt-clr-2 100%);
 	        -webkit-background-clip: text;
-	        -webkit-text-fill-color: transparent;
+            -webkit-text-fill-color: transparent;
+            font-family: $delice-font;
         }
     }
     &--palette{
         background-color: $palette-bg-clr;
-        color: $palette-txt-clr-2;
-        h1{
+        color: $palette-txt-clr-1;
+        font-family: $del-pal-menu;
+        h2{
             background: linear-gradient(to right bottom, $palette-txt-clr-1 0%, $palette-txt-clr-2 100%);
 	        -webkit-background-clip: text;
-	        -webkit-text-fill-color: transparent;
+            -webkit-text-fill-color: transparent;
+            font-family: $palette-font;
         }
     }
-}
-
-.resto_name{
-    width: 420px;
-    height: 210px;
-    text-align: center;
-    border: 2px black solid;
+    &_name{
+        width: 420px;
+        height: 210px;
+        text-align: center;
+        border: 2px black solid;
+    }
 }
 
 .soon{
     @include omf-txt-site;
-    width: 660px;
-    height: 120px;
+    width: 400px;
+    height: 70px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     margin-bottom: 90px;
     border-radius: 20px;
     p{
-        font-size: 4rem;
+        font-size: 2.5rem;
     }
 }
 
-.footer{
-    height: 140px;
+footer{
+    height: 100px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
     @include omf-txt-site;
-    font-size: 3rem;
+    font-size: 2rem;
 }

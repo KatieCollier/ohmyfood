@@ -27,9 +27,87 @@
 
 }
 
+/*Note font*/
+@font-face {
+    font-family: 'merienda';
+        src: url('fonts/merienda/Merienda-Bold.ttf') format('truetype');
+        font-weight: normal;
+        font-style: normal;
+    }
+
+
+/*Note enchantée menu font*/
+@font-face {
+    font-family: 'komika_textregular';
+    src: url('fonts/komikatext_regular_macroman/KOMTXT__-webfont.eot');
+    src: url('fonts/komikatext_regular_macroman/KOMTXT__-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/komikatext_regular_macroman/KOMTXT__-webfont.woff2') format('woff2'),
+         url('fonts/komikatext_regular_macroman/KOMTXT__-webfont.woff') format('woff'),
+         url('fonts/komikatext_regular_macroman/KOMTXT__-webfont.ttf') format('truetype'),
+         url('fonts/komikatext_regular_macroman/KOMTXT__-webfont.svg#komika_textregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* chic font */
+@font-face {
+font-family: 'croissant-one';
+    src: url('fonts/croissant-one/CroissantOne-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* chic menu font*/
+@font-face {
+    font-family: 'serif-beta';
+        src: url('fonts/serif12-beta/Serif12Beta-Bold.otf');
+        font-weight: normal;
+        font-style: normal;
+    }
+
+/* delice font*/
+@font-face {
+    font-family: 'dancing-script';
+        src: url('fonts/dancing-script-ot/dancing-script-ot.otf');
+        font-weight: normal;
+        font-style: normal;
+    }
+
+/* palette font*/
+@font-face {
+    font-family: 'alegra-sans';
+        src: url('fonts/alegreya-sans/AlegreyaSans-Italic.otf');
+        font-weight: normal;
+        font-style: normal;
+    }
+
+/*delice and palette menu*/
+@font-face {
+    font-family: 'montezregular';
+    src: url('fonts/montez_regular_macroman/Montez-Regular-webfont.eot');
+    src: url('fonts/montez_regular_macroman/Montez-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/montez_regular_macroman/Montez-Regular-webfont.woff2') format('woff2'),
+         url('fonts/montez_regular_macroman/Montez-Regular-webfont.woff') format('woff'),
+         url('fonts/montez_regular_macroman/Montez-Regular-webfont.ttf') format('truetype'),
+         url('fonts/montez_regular_macroman/Montez-Regular-webfont.svg#montezregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
 /*Establishing fonts*/
 $title-font: "colaborate-mediumregular";
 $site-font: "kanitregular";
+$note-font: "merienda";
+$note-menu-font: "komika_textregular";
+$chic-font: "croissant-one";
+$chic-menu-font: "serif-beta";
+$delice-font: "dancing-script";
+$palette-font: "alegra-sans";
+$del-pal-menu: "montezregular";
+
+/*menu font size*/
+$menu-font-size: 2rem;
 
 /* Colours */
 $main-bg-color: #579c87;
@@ -49,6 +127,6 @@ $shadow-opacity: 0.1;
 
 
 /* sizes for the restaurant squares on the home page*/
-$square-width: 535px;
-$square-height: 760px;
+$square-width: 450px;
+$square-height: 570px;
 $shadow-size: 7px;
