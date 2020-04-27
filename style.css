@@ -1,6 +1,5 @@
-@charset "UTF-8";
 /* FONTS */
-/* Font for omf logo */
+/* Font for omf logo - e.g. header */
 @font-face {
   font-family: "colaborate-mediumregular";
   src: url("fonts/colaborate_medium_macroman/ColabMed-webfont.eot");
@@ -8,7 +7,7 @@
   font-weight: normal;
   font-style: normal;
 }
-/* Font for main omf site */
+/* Font for main omf site - e.g. buttons */
 @font-face {
   font-family: "kanitregular";
   src: url("fonts/kanit_regular_macroman/kanit-regular-webfont.eot");
@@ -23,7 +22,7 @@
   font-weight: normal;
   font-style: normal;
 }
-/*Note enchantée menu font*/
+/*Note menu font*/
 @font-face {
   font-family: "komika_textregular";
   src: url("fonts/komikatext_regular_macroman/KOMTXT__-webfont.eot");
@@ -67,9 +66,19 @@
   font-weight: normal;
   font-style: normal;
 }
-/*Establishing fonts*/
+/*music note font*/
+@font-face {
+  font-family: "noto-sans";
+  src: url("fonts/Noto_Sans/NotoSans-Italic.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+/*DEFINING FONTS*/
 /*menu font size*/
+/*DEFINING COLOURS*/
 /* Colours */
+/*shadows home page*/
+/* ELEMENT SIZES home page*/
 /* sizes for the restaurant squares on the home page*/
 body {
   width: 100%;
@@ -83,14 +92,12 @@ body {
 }
 
 header {
-  height: 100px;
+  height: 170px;
   background-color: #579c87;
   display: flex;
   flex-direction: column;
   justify-content: center;
-}
-header h1 {
-  font-size: 5rem;
+  font-size: 2.7rem;
   color: #fdcb46;
   font-family: "colaborate-mediumregular";
   text-align: center;
@@ -122,7 +129,7 @@ article {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  font-size: 2rem;
+  font-size: 3rem;
   box-shadow: 7px 7px 7px rgba(0, 0, 0, 0.1), -7px 7px 7px rgba(0, 0, 0, 0.1), -7px -7px 7px rgba(0, 0, 0, 0.1), 7px -7px 7px rgba(0, 0, 0, 0.1);
 }
 .resto--note {
@@ -134,6 +141,16 @@ article {
 .resto--note h2 {
   font-family: "merienda";
   text-transform: initial;
+  font-size: 2rem;
+  margin-top: 0px;
+}
+.resto--note strong {
+  background: linear-gradient(to right bottom, #f04a5e 0%, #f78f6a 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: "noto-sans";
+  font-size: 3rem;
+  margin: 0px;
 }
 .resto--chic {
   background-color: #fff5fe;
@@ -145,6 +162,7 @@ article {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-family: "croissant-one";
+  font-size: 2rem;
 }
 .resto--delice {
   background-color: #f9f9f9;
@@ -152,10 +170,10 @@ article {
   font-family: "montezregular";
 }
 .resto--delice h2 {
-  background: linear-gradient(to right bottom, #0431df 0%, #0887fb 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  font-family: "dancing-script";
+  background-color: #f9f9f9;
+  color: #0887fb;
+  font-family: "montezregular";
+  font-size: 3rem;
 }
 .resto--palette {
   background-color: #fdfffd;
@@ -167,19 +185,20 @@ article {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-family: "alegra-sans";
+  font-size: 3rem;
 }
 .resto_name {
   width: 420px;
   height: 210px;
   text-align: center;
-  border: 2px black solid;
 }
 
 .soon {
   background-color: #579c87;
   color: #fdcb46;
-  text-align: center;
   font-family: "kanitregular";
+  text-align: center;
+  font-size: 2.5rem;
   width: 400px;
   height: 70px;
   display: flex;
@@ -188,21 +207,22 @@ article {
   margin-bottom: 90px;
   border-radius: 20px;
 }
-.soon p {
-  font-size: 2.5rem;
-}
 
 footer {
-  height: 100px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  max-width: 1500px;
+  height: 50px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
   background-color: #579c87;
   color: #fdcb46;
-  text-align: center;
   font-family: "kanitregular";
-  font-size: 2rem;
+  text-align: center;
+  font-size: 1.4rem;
 }
 
 /*# sourceMappingURL=style.css.map */

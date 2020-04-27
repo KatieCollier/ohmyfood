@@ -1,5 +1,5 @@
 /* FONTS */
-/* Font for omf logo */
+/* Font for omf logo - e.g. header */
 @font-face {
     font-family: 'colaborate-mediumregular';
     src: url('fonts/colaborate_medium_macroman/ColabMed-webfont.eot');
@@ -13,7 +13,7 @@
 
 }
 
-/* Font for main omf site */
+/* Font for main omf site - e.g. buttons */
 @font-face {
     font-family: 'kanitregular';
     src: url('fonts/kanit_regular_macroman/kanit-regular-webfont.eot');
@@ -35,8 +35,7 @@
         font-style: normal;
     }
 
-
-/*Note enchantée menu font*/
+/*Note menu font*/
 @font-face {
     font-family: 'komika_textregular';
     src: url('fonts/komikatext_regular_macroman/KOMTXT__-webfont.eot');
@@ -94,8 +93,15 @@ font-family: 'croissant-one';
     font-style: normal;
 }
 
+/*music note font*/
+@font-face {
+    font-family: 'noto-sans';
+        src: url('fonts/Noto_Sans/NotoSans-Italic.ttf') format('truetype');
+        font-weight: normal;
+        font-style: normal;
+    }
 
-/*Establishing fonts*/
+/*DEFINING FONTS*/
 $title-font: "colaborate-mediumregular";
 $site-font: "kanitregular";
 $note-font: "merienda";
@@ -105,10 +111,16 @@ $chic-menu-font: "serif-beta";
 $delice-font: "dancing-script";
 $palette-font: "alegra-sans";
 $del-pal-menu: "montezregular";
+$music-font: "noto-sans";
 
 /*menu font size*/
-$menu-font-size: 2rem;
+$soon-font-size:2.5rem;
+$footer-font-size: 1.4rem;
+$resto-size-home: 2rem;
+$menu-size-home: 3rem;
+$music-size-home: 3rem;
 
+/*DEFINING COLOURS*/
 /* Colours */
 $main-bg-color: #579c87;
 $main-txt-color: #fdcb46;
@@ -123,9 +135,13 @@ $delice-bg-clr: #f9f9f9;
 $palette-txt-clr-1: #3d9339;
 $palette-txt-clr-2: #bfff7e;
 $palette-bg-clr: #fdfffd;
+$music-clr-drk: #f04a5e;
+$music-clr-lgt: #f78f6a;
+
+/*shadows home page*/
 $shadow-opacity: 0.1;
 
-
+/* ELEMENT SIZES home page*/
 /* sizes for the restaurant squares on the home page*/
 $square-width: 450px;
 $square-height: 570px;

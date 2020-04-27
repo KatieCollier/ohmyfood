@@ -1,16 +1,5 @@
 header{
-    height: 100px;
-    background-color: $main-bg-color;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    h1{
-        font-size: 5rem;
-        color: $main-txt-color;
-        font-family: $title-font;
-        text-align: center;
-        letter-spacing: -8px;
-    }
+    @include omf-header;
 }
 
 main{
@@ -38,7 +27,7 @@ article{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    font-size: 2rem;
+    font-size: $menu-size-home;
     box-shadow: $shadow-size $shadow-size $shadow-size rgba(0,0,0, $shadow-opacity),
                 -1*$shadow-size $shadow-size $shadow-size rgba(0,0,0, $shadow-opacity),
                 -1*$shadow-size -1*$shadow-size $shadow-size rgba(0,0,0, $shadow-opacity),
@@ -49,8 +38,12 @@ article{
         font-family: $note-menu-font;
         text-transform: uppercase;
         h2{
-            font-family: $note-font;
-            text-transform: initial;
+            @include note-name($resto-size-home);
+            margin-top: 0px;
+        }
+        strong{
+            @include music-note ($music-size-home);
+            margin:0px;
         }
     }
     &--chic{
@@ -58,10 +51,7 @@ article{
         color: $chic-txt-clr-1;
         font-family: $chic-menu-font;
         h2{
-            background: linear-gradient(to right bottom, $chic-txt-clr-1 0%, $chic-txt-clr-2 100%);
-	        -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            font-family: $chic-font;
+            @include chic-name ($resto-size-home);
         }
     }
     &--delice{
@@ -69,10 +59,7 @@ article{
         color: $delice-txt-clr-2;
         font-family: $del-pal-menu;
         h2{
-            background: linear-gradient(to right bottom, $delice-txt-clr-1 0%, $delice-txt-clr-2 100%);
-	        -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            font-family: $delice-font;
+            @include delice-name (1.5*$resto-size-home);
         }
     }
     &--palette{
@@ -80,22 +67,18 @@ article{
         color: $palette-txt-clr-1;
         font-family: $del-pal-menu;
         h2{
-            background: linear-gradient(to right bottom, $palette-txt-clr-1 0%, $palette-txt-clr-2 100%);
-	        -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            font-family: $palette-font;
+            @include palette-name (1.5*$resto-size-home)
         }
     }
     &_name{
         width: 420px;
         height: 210px;
         text-align: center;
-        border: 2px black solid;
     }
 }
 
 .soon{
-    @include omf-txt-site;
+    @include omf-txt-site ($soon-font-size);
     width: 400px;
     height: 70px;
     display: flex;
@@ -103,17 +86,17 @@ article{
     justify-content: center;
     margin-bottom: 90px;
     border-radius: 20px;
-    p{
-        font-size: 2.5rem;
-    }
 }
 
 footer{
-    height: 100px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    max-width: 1500px;
+    height: 50px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    @include omf-txt-site;
-    font-size: 2rem;
+    @include omf-txt-site ($footer-font-size);
 }

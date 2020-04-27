@@ -1,10 +1,57 @@
-@mixin omf-txt-clr {
+@mixin omf-header {
+    height: 170px;
     background-color: $main-bg-color;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 2.7rem;
     color: $main-txt-color;
+    font-family: $title-font;
     text-align: center;
+    letter-spacing: -8px;
 }
 
-@mixin omf-txt-site {
-    @include omf-txt-clr;
+@mixin omf-txt-site ($font-size) {
+    background-color: $main-bg-color;
+    color: $main-txt-color;
     font-family: $site-font;
+    text-align: center;
+    font-size: $font-size;
+}
+
+@mixin note-name ($font-size){
+    font-family: $note-font;
+    text-transform: initial;
+    font-size: $font-size;
+}
+
+@mixin chic-name ($font-size){
+    background: linear-gradient(to right bottom, $chic-txt-clr-1 0%, $chic-txt-clr-2 100%);
+	        -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font-family: $chic-font;
+            font-size: $font-size;
+}
+
+@mixin delice-name ($font-size){
+    background-color: $delice-bg-clr;
+    color: $delice-txt-clr-2;
+    font-family: $del-pal-menu;
+    font-size: $font-size;
+}
+
+@mixin palette-name ($font-size){
+    background: linear-gradient(to right bottom, $palette-txt-clr-1 0%, $palette-txt-clr-2 100%);
+	-webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: $palette-font;
+    font-size: $font-size;
+}
+
+@mixin music-note ($font-size) {
+    background: linear-gradient(to right bottom, $music-clr-drk 0%, $music-clr-lgt 100%);
+	-webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: $music-font;
+    font-size: $font-size;
 }
