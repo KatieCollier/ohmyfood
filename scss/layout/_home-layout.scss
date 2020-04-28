@@ -1,0 +1,85 @@
+.main-home{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.article-home{
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-bottom: 90px;
+}
+
+.resto{
+    width: $square-width;
+    height: $square-height;
+    margin: 60px 15px 0px 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: $shadow-size $shadow-size $shadow-size rgba(0,0,0, $shadow-opacity),
+                -1*$shadow-size $shadow-size $shadow-size rgba(0,0,0, $shadow-opacity),
+                -1*$shadow-size -1*$shadow-size $shadow-size rgba(0,0,0, $shadow-opacity),
+                $shadow-size -1*$shadow-size $shadow-size rgba(0,0,0, $shadow-opacity);
+    &--note{
+        background-color: $note-bg-clr;
+        strong{
+            @include music-note ($music-size-home);
+        }
+        h2{
+            @include note-name($resto-size-home);
+            margin: 0px 0px 10% 0px;
+        }
+        p{
+            @include note-menu;
+            margin: 0px;
+        }
+    }
+    &--chic{
+        background-color: $chic-bg-clr;
+        h2{
+            @include chic-name ($resto-size-home);
+        }
+        p{
+            @include chic-menu;
+        }
+    }
+    &--delice{
+        background-color: $delice-bg-clr;
+        h2{
+            @include delice-name (1.5*$resto-size-home);
+        }
+        p{
+            @include del-pal-menu ($delice-txt-clr-2);
+        }
+    }
+    &--palette{
+        background-color: $palette-bg-clr;
+        h2{
+            @include palette-name (1.5*$resto-size-home)
+        }
+        p{
+            @include del-pal-menu ($palette-txt-clr-1);
+        }
+    }
+    &_name{
+        width: 420px;
+        height: 210px;
+        text-align: center;
+    }
+}
+
+.soon{
+    @include omf-txt-site ($soon-font-size);
+    width: 400px;
+    height: 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 50px;
+    border-radius: 20px;
+}

@@ -1,17 +1,26 @@
-main{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-}
-
 article{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    padding: 5%;
 }
 
 section{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+}
+
+h2{
+    text-align: center;
+}
+
+.resto-header{
+    text-align: center;
+    padding-top: 2%;
+}
+
+.resto-footer{
+    text-align: center;
+    padding-bottom: 10%;
 }

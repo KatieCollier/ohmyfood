@@ -110,6 +110,11 @@ a {
   text-decoration: none;
 }
 
+main {
+  width: 80%;
+  margin: 5% 10% 7% 10%;
+}
+
 header {
   height: 170px;
   background-color: #579c87;
@@ -127,6 +132,24 @@ header a {
   color: #fdcb46;
 }
 
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  max-width: 1500px;
+  height: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #579c87;
+  color: #fdcb46;
+  font-family: "kanitregular";
+  text-align: center;
+  font-size: 1.4rem;
+  text-decoration: none;
+}
+
 .main-home {
   display: flex;
   flex-direction: column;
@@ -134,7 +157,6 @@ header a {
 }
 
 .article-home {
-  width: 80%;
   margin: auto;
   display: flex;
   flex-direction: row;
@@ -238,44 +260,39 @@ header a {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin-bottom: 90px;
+  margin-bottom: 50px;
   border-radius: 20px;
-}
-
-footer {
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-  max-width: 1500px;
-  height: 50px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  background-color: #579c87;
-  color: #fdcb46;
-  font-family: "kanitregular";
-  text-align: center;
-  font-size: 1.4rem;
-  text-decoration: none;
-}
-
-main {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
 }
 
 article {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+  padding: 5%;
 }
 
 section {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+}
+
+h2 {
+  text-align: center;
+}
+
+.resto-header {
+  text-align: center;
+  padding-top: 2%;
+}
+
+.resto-footer {
+  text-align: center;
+  padding-bottom: 10%;
+}
+
+.main--note {
+  background-color: #fcdfdb;
 }
 
 /*# sourceMappingURL=style.css.map */
