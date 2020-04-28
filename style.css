@@ -123,7 +123,6 @@ article {
 .resto {
   width: 450px;
   height: 570px;
-  border: 2px black solid;
   margin: 60px 15px 0px 15px;
   display: flex;
   flex-direction: column;
@@ -142,7 +141,7 @@ article {
   font-family: "merienda";
   text-transform: initial;
   font-size: 2rem;
-  margin-top: 0px;
+  margin: 0px 0px 10% 0px;
 }
 .resto--note strong {
   background: linear-gradient(to right bottom, #f04a5e 0%, #f78f6a 100%);
@@ -150,6 +149,8 @@ article {
   -webkit-text-fill-color: transparent;
   font-family: "noto-sans";
   font-size: 3rem;
+}
+.resto--note p {
   margin: 0px;
 }
 .resto--chic {

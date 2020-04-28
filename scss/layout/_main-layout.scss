@@ -21,7 +21,6 @@ article{
 .resto{
     width: $square-width;
     height: $square-height;
-    border: 2px black solid;
     margin: 60px 15px 0px 15px;
     display: flex;
     flex-direction: column;
@@ -39,11 +38,13 @@ article{
         text-transform: uppercase;
         h2{
             @include note-name($resto-size-home);
-            margin-top: 0px;
+            margin: 0px 0px 10% 0px;
         }
         strong{
             @include music-note ($music-size-home);
-            margin:0px;
+        }
+        p{
+            margin: 0px;
         }
     }
     &--chic{
