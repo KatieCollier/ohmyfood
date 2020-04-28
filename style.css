@@ -73,15 +73,49 @@
   font-weight: normal;
   font-style: normal;
 }
+/* note items font*/
+@font-face {
+  font-family: "sorts_mill_goudyitalic";
+  src: url("fonts/sortsmillgoudy_italic_macroman/GoudyStM-Italic-webfont.eot");
+  src: url("fonts/sortsmillgoudy_italic_macroman/GoudyStM-Italic-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/sortsmillgoudy_italic_macroman/GoudyStM-Italic-webfont.woff2") format("woff2"), url("fonts/sortsmillgoudy_italic_macroman/GoudyStM-Italic-webfont.woff") format("woff"), url("fonts/sortsmillgoudy_italic_macroman/GoudyStM-Italic-webfont.ttf") format("truetype"), url("fonts/sortsmillgoudy_italic_macroman/GoudyStM-Italic-webfont.svg#sorts_mill_goudyitalic") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
 /*DEFINING FONTS*/
-/*menu font size*/
+/*for omf header*/
+/* for omf text other than the header*/
+/*font for note enchantee's name - home and menu pages*/
+/*font for "menu" of note enchantee - home page*/
+/*font for items on menu of note enchantee - menu page*/
+/*font for chic francaise's name - home and menu pages*/
+/*font for "menu" of chic francaise - home page - & for items on menu page*/
+/*font for delice papille's name - home and menu pages*/
+/*font for palette gout's name - home and menu pages*/
+/*font for "menu" of delice papille and palette gout - home page*/
+/* for the music note for note enchantee*/
+/*FONT SIZES*/
+/*home page*/
+/*menu pages*/
 /*DEFINING COLOURS*/
 /* Colours */
+/*background color for header, footer & buttons*/
+/*text color omf text*/
+/*text color for note enchantee*/
+/*background colour for note enchantee*/
+/*darkest colour of note*/
+/*lightest color of note*/
+/*orange color of chic francaise title*/
+/*purple color of chic francaise title*/
+/*background color for chic francaise*/
+/*text color for chic francaise starters*/
+/*text color for chic francaise main courses*/
+/*text color for chic francaise deserts*/
 /*shadows home page*/
 /* ELEMENT SIZES home page*/
 /* sizes for the restaurant squares on the home page*/
 /* mixin for header format*/
 /* mixin for format of other omf sections*/
+/*mixin for box shadows*/
 /* mixins for Note Enchantee pages*/
 /*Mixins for chic a la francaise pages */
 /* mixins for delice des papilles pages*/
@@ -168,7 +202,7 @@ footer {
 .resto {
   width: 450px;
   height: 570px;
-  margin: 60px 15px 0px 15px;
+  margin: 15px 15px 60px 15px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -219,7 +253,7 @@ footer {
 .resto--delice h2 {
   background-color: #f9f9f9;
   color: #0887fb;
-  font-family: "montezregular";
+  font-family: "dancing-script";
   font-size: 3rem;
 }
 .resto--delice p {
@@ -264,17 +298,24 @@ footer {
   border-radius: 20px;
 }
 
+.main-menu {
+  box-shadow: 7px 7px 7px rgba(0, 0, 0, 0.1), -7px 7px 7px rgba(0, 0, 0, 0.1), -7px -7px 7px rgba(0, 0, 0, 0.1), 7px -7px 7px rgba(0, 0, 0, 0.1);
+}
+.main-menu p {
+  font-size: 1.5rem;
+}
+.main-menu section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0% 5% 0% 5%;
+}
+
 article {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   padding: 5%;
-}
-
-section {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
 }
 
 h2 {
@@ -284,6 +325,7 @@ h2 {
 .resto-header {
   text-align: center;
   padding-top: 2%;
+  font-size: 2rem;
 }
 
 .resto-footer {
@@ -293,6 +335,78 @@ h2 {
 
 .main--note {
   background-color: #fcdfdb;
+}
+.main--note h2 {
+  font-family: "merienda";
+  color: #3c1218;
+  font-size: 2.5rem;
+}
+.main--note p {
+  font-family: "sorts_mill_goudyitalic";
+}
+.main--note .price {
+  font-weight: bold;
+}
+
+.resto-header--note {
+  padding-top: 0%;
+}
+.resto-header--note strong {
+  font-family: "noto-sans";
+  background: linear-gradient(to right bottom, #f04a5e 0%, #f78f6a 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 7rem;
+}
+.resto-header--note h1 {
+  font-family: "merienda";
+  color: #3c1218;
+  font-size: 3.5rem;
+  margin: 0%;
+}
+
+.resto-footer p {
+  font-family: "merienda";
+  color: #3c1218;
+  font-size: 2.5rem;
+}
+.resto-footer strong {
+  font-family: "noto-sans";
+  background: linear-gradient(to right bottom, #f04a5e 0%, #f78f6a 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 4rem;
+}
+
+.main--chic {
+  background-color: #fff5fe;
+}
+.main--chic .starters {
+  color: #c67412;
+}
+.main--chic .main-courses {
+  color: #a56799;
+}
+.main--chic .desert {
+  color: #6e4ccc;
+}
+.main--chic h2 {
+  font-family: "serif-beta";
+  font-size: 2.5rem;
+}
+.main--chic p {
+  font-family: "serif-beta";
+}
+.main--chic .price {
+  font-weight: bold;
+}
+
+.resto-header--chic h1 {
+  background: linear-gradient(to right bottom, #c77412 0%, #905bfd 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: "croissant-one";
+  font-size: 3.5rem;
 }
 
 /*# sourceMappingURL=style.css.map */

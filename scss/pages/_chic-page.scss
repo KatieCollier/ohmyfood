@@ -1,0 +1,28 @@
+.main--chic{
+    background-color: $chic-bg-clr;
+    .starters{
+        color: $chic-items-starters;
+    }
+    .main-courses{
+        color: $chic-items-course;
+    }
+    .desert{
+        color: $chic-items-desert;
+    }
+    h2{
+        font-family: $chic-menu-font;
+        font-size: $courses-font-size;
+    }
+    p{
+        font-family: $chic-menu-font;  
+      }
+    .price{
+        font-weight: bold;
+    }
+}
+
+.resto-header--chic {
+    h1{
+        @include chic-name($resto-size-menu);
+    }
+}

@@ -7,7 +7,7 @@
     justify-content: center;
     font-size: 2.7rem;
     color: $main-txt-color;
-    font-family: $title-font;
+    font-family: $header-font;
     text-align: center;
     letter-spacing: -8px;
 }
@@ -16,15 +16,23 @@
 @mixin omf-txt-site ($font-size) {
     background-color: $main-bg-color;
     color: $main-txt-color;
-    font-family: $site-font;
+    font-family: $omf-font;
     text-align: center;
     font-size: $font-size;
     text-decoration: none;
 }
 
+/*mixin for box shadows*/
+@mixin shadow ($size) {
+    box-shadow: $shadow-size $shadow-size $shadow-size rgba(0,0,0, $shadow-opacity),
+                -1*$shadow-size $shadow-size $shadow-size rgba(0,0,0, $shadow-opacity),
+                -1*$shadow-size -1*$shadow-size $shadow-size rgba(0,0,0, $shadow-opacity),
+                $shadow-size -1*$shadow-size $shadow-size rgba(0,0,0, $shadow-opacity);
+}
+
 /* mixins for Note Enchantee pages*/
 @mixin note-name ($font-size){
-    font-family: $note-font;
+    font-family: $note-name-font;
     color: $note-txt-clr;
     font-size: $font-size;
 }
@@ -46,16 +54,16 @@
 
 /*Mixins for chic a la francaise pages */
 @mixin chic-name ($font-size){
-    background: linear-gradient(to right bottom, $chic-txt-clr-1 0%, $chic-txt-clr-2 100%);
+    background: linear-gradient(to right bottom, $chic-txt-clr-or 0%, $chic-txt-clr-pu 100%);
 	        -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
-            font-family: $chic-font;
+            font-family: $chic-name-font;
             font-size: $font-size;
 }
 
 @mixin chic-menu{
     font-family: $chic-menu-font;
-    color: $chic-txt-clr-1;
+    color: $chic-txt-clr-or;
     font-size: $menu-size-home;
 }
 
@@ -63,7 +71,7 @@
 @mixin delice-name ($font-size){
     background-color: $delice-bg-clr;
     color: $delice-txt-clr-2;
-    font-family: $del-pal-menu;
+    font-family: $delice-name-font;
     font-size: $font-size;
 }
 
@@ -72,7 +80,7 @@
     background: linear-gradient(to right bottom, $palette-txt-clr-1 0%, $palette-txt-clr-2 100%);
 	-webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    font-family: $palette-font;
+    font-family: $palette-name-font;
     font-size: $font-size;
 }
 

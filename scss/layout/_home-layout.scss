@@ -16,15 +16,12 @@
 .resto{
     width: $square-width;
     height: $square-height;
-    margin: 60px 15px 0px 15px;
+    margin: 15px 15px 60px 15px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    box-shadow: $shadow-size $shadow-size $shadow-size rgba(0,0,0, $shadow-opacity),
-                -1*$shadow-size $shadow-size $shadow-size rgba(0,0,0, $shadow-opacity),
-                -1*$shadow-size -1*$shadow-size $shadow-size rgba(0,0,0, $shadow-opacity),
-                $shadow-size -1*$shadow-size $shadow-size rgba(0,0,0, $shadow-opacity);
+    @include shadow($shadow-size);
     &--note{
         background-color: $note-bg-clr;
         strong{

@@ -100,43 +100,66 @@ font-family: 'croissant-one';
         font-weight: normal;
         font-style: normal;
     }
+/* note items font*/
+@font-face {
+    font-family: 'sorts_mill_goudyitalic';
+    src: url('fonts/sortsmillgoudy_italic_macroman/GoudyStM-Italic-webfont.eot');
+    src: url('fonts/sortsmillgoudy_italic_macroman/GoudyStM-Italic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/sortsmillgoudy_italic_macroman/GoudyStM-Italic-webfont.woff2') format('woff2'),
+         url('fonts/sortsmillgoudy_italic_macroman/GoudyStM-Italic-webfont.woff') format('woff'),
+         url('fonts/sortsmillgoudy_italic_macroman/GoudyStM-Italic-webfont.ttf') format('truetype'),
+         url('fonts/sortsmillgoudy_italic_macroman/GoudyStM-Italic-webfont.svg#sorts_mill_goudyitalic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
 
 /*DEFINING FONTS*/
-$title-font: "colaborate-mediumregular";
-$site-font: "kanitregular";
-$note-font: "merienda";
-$note-menu-font: "komika_textregular";
-$chic-font: "croissant-one";
-$chic-menu-font: "serif-beta";
-$delice-font: "dancing-script";
-$palette-font: "alegra-sans";
-$del-pal-menu: "montezregular";
-$music-font: "noto-sans";
+$header-font: "colaborate-mediumregular"; /*for omf header*/
+$omf-font: "kanitregular"; /* for omf text other than the header*/
+$note-name-font: "merienda"; /*font for note enchantee's name - home and menu pages*/
+$note-menu-font: "komika_textregular";/*font for "menu" of note enchantee - home page*/
+$note-items-font: "sorts_mill_goudyitalic"; /*font for items on menu of note enchantee - menu page*/
+$chic-name-font: "croissant-one"; /*font for chic francaise's name - home and menu pages*/
+$chic-menu-font: "serif-beta";/*font for "menu" of chic francaise - home page - & for items on menu page*/
+$delice-name-font: "dancing-script";/*font for delice papille's name - home and menu pages*/
+$palette-name-font: "alegra-sans";/*font for palette gout's name - home and menu pages*/
+$del-pal-menu: "montezregular";/*font for "menu" of delice papille and palette gout - home page*/
+$music-font: "noto-sans";/* for the music note for note enchantee*/
 
-/*menu font size*/
-$soon-font-size:2.5rem;
-$footer-font-size: 1.4rem;
+/*FONT SIZES*/
+/*home page*/
 $resto-size-home: 2rem;
 $menu-size-home: 3rem;
 $music-size-home: 3rem;
+$soon-font-size:2.5rem;
+$footer-font-size: 1.4rem;
+/*menu pages*/
+$resto-size-menu: 3.5rem;
+$courses-font-size: 2.5rem;
+$items-font-size: 1.5rem;
 
 /*DEFINING COLOURS*/
 /* Colours */
-$main-bg-color: #579c87;
-$main-txt-color: #fdcb46;
-$note-txt-clr: #3c1218;
-$note-bg-clr:  #fcdfdb;
-$chic-txt-clr-1: #c77412;
-$chic-txt-clr-2: #905bfd;
-$chic-bg-clr: #fff5fe;
+$main-bg-color: #579c87; /*background color for header, footer & buttons*/
+$main-txt-color: #fdcb46; /*text color omf text*/
+$note-txt-clr: #3c1218;/*text color for note enchantee*/
+$note-bg-clr:  #fcdfdb;/*background colour for note enchantee*/
+$music-clr-drk: #f04a5e;/*darkest colour of note*/
+$music-clr-lgt: #f78f6a;/*lightest color of note*/
+$chic-txt-clr-or: #c77412;/*orange color of chic francaise title*/
+$chic-txt-clr-pu: #905bfd;/*purple color of chic francaise title*/
+$chic-bg-clr: #fff5fe;/*background color for chic francaise*/
+$chic-items-starters: #c67412;/*text color for chic francaise starters*/
+$chic-items-course: #a56799;/*text color for chic francaise main courses*/
+$chic-items-desert: #6e4ccc;/*text color for chic francaise deserts*/
 $delice-txt-clr-1: #0431df;
 $delice-txt-clr-2: #0887fb;
 $delice-bg-clr: #f9f9f9;
 $palette-txt-clr-1: #3d9339;
 $palette-txt-clr-2: #bfff7e;
 $palette-bg-clr: #fdfffd;
-$music-clr-drk: #f04a5e;
-$music-clr-lgt: #f78f6a;
+
 
 /*shadows home page*/
 $shadow-opacity: 0.1;

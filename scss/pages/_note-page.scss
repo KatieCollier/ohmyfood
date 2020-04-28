@@ -1,3 +1,38 @@
 .main--note{
     background-color: $note-bg-clr;
+    h2{
+        @include note-name ($courses-font-size);
+    }
+    p{
+        font-family: $note-items-font;  
+      }
+      .price{
+          font-weight: bold;
+      }
 }
+
+.resto-header--note {
+    padding-top: 0%;
+    strong{
+        @include music-note (7rem);
+    }
+    h1{
+        @include note-name ($resto-size-menu);
+        margin: 0%;
+    }
+}
+
+.resto-footer{
+    p{
+        @include note-name(2.5rem);
+    }
+    strong{
+        @include music-note(4rem);
+    }
+}
+
+
+
+
+
+
