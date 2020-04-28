@@ -99,7 +99,8 @@ font-family: 'croissant-one';
         src: url('fonts/Noto_Sans/NotoSans-Italic.ttf') format('truetype');
         font-weight: normal;
         font-style: normal;
-    }
+ }
+
 /* note items font*/
 @font-face {
     font-family: 'sorts_mill_goudyitalic';
@@ -111,8 +112,15 @@ font-family: 'croissant-one';
          url('fonts/sortsmillgoudy_italic_macroman/GoudyStM-Italic-webfont.svg#sorts_mill_goudyitalic') format('svg');
     font-weight: normal;
     font-style: normal;
-
 }
+
+/*delice items font*/
+@font-face {
+    font-family: 'andika-italic';
+        src: url('fonts/andika-basic/AndikaNewBasic-I.ttf') format('truetype');
+        font-weight: normal;
+        font-style: normal;
+ }
 
 /*DEFINING FONTS*/
 $header-font: "colaborate-mediumregular"; /*for omf header*/
@@ -123,6 +131,7 @@ $note-items-font: "sorts_mill_goudyitalic"; /*font for items on menu of note enc
 $chic-name-font: "croissant-one"; /*font for chic francaise's name - home and menu pages*/
 $chic-menu-font: "serif-beta";/*font for "menu" of chic francaise - home page - & for items on menu page*/
 $delice-name-font: "dancing-script";/*font for delice papille's name - home and menu pages*/
+$del-pal-item-font: "andika-italic";/*font for items on menu of delice paille and palette gout - menu page*/
 $palette-name-font: "alegra-sans";/*font for palette gout's name - home and menu pages*/
 $del-pal-menu: "montezregular";/*font for "menu" of delice papille and palette gout - home page*/
 $music-font: "noto-sans";/* for the music note for note enchantee*/
@@ -153,9 +162,9 @@ $chic-bg-clr: #fff5fe;/*background color for chic francaise*/
 $chic-items-starters: #c67412;/*text color for chic francaise starters*/
 $chic-items-course: #a56799;/*text color for chic francaise main courses*/
 $chic-items-desert: #6e4ccc;/*text color for chic francaise deserts*/
-$delice-txt-clr-1: #0431df;
-$delice-txt-clr-2: #0887fb;
-$delice-bg-clr: #f9f9f9;
+$delice-txt-clr-drk: #0023db;/*darkest color of delice papille name*/
+$delice-txt-clr-lgt: #108dfb;/*lightest color of delice papille name*/
+$delice-bg-clr: #f9f9f9;/*background color for delice papille*/
 $palette-txt-clr-1: #3d9339;
 $palette-txt-clr-2: #bfff7e;
 $palette-bg-clr: #fdfffd;

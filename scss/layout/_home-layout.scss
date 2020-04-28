@@ -51,7 +51,7 @@
             @include delice-name (1.5*$resto-size-home);
         }
         p{
-            @include del-pal-menu ($delice-txt-clr-2);
+            @include del-pal-menu ($delice-txt-clr-lgt);
         }
     }
     &--palette{

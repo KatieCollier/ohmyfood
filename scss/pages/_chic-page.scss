@@ -1,5 +1,6 @@
 .main--chic{
     background-color: $chic-bg-clr;
+    font-family: $chic-menu-font;
     .starters{
         color: $chic-items-starters;
     }
@@ -10,12 +11,8 @@
         color: $chic-items-desert;
     }
     h2{
-        font-family: $chic-menu-font;
         font-size: $courses-font-size;
     }
-    p{
-        font-family: $chic-menu-font;  
-      }
     .price{
         font-weight: bold;
     }

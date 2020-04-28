@@ -69,8 +69,9 @@
 
 /* mixins for delice des papilles pages*/
 @mixin delice-name ($font-size){
-    background-color: $delice-bg-clr;
-    color: $delice-txt-clr-2;
+    background: linear-gradient(to right, $delice-txt-clr-drk 0%, 30%, $delice-txt-clr-lgt 100%);
+	-webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     font-family: $delice-name-font;
     font-size: $font-size;
 }

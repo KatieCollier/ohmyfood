@@ -1,0 +1,17 @@
+.main--delice{
+    background-color: $delice-bg-clr;
+    font-family: $del-pal-item-font;
+    font-size: $items-font-size;
+    h2{
+        font-size: $courses-font-size;
+    }
+    .price{
+        font-weight: bold;
+    }
+}
+
+.resto-header--delice {
+    h1{
+        @include delice-name(1.5*$resto-size-menu);
+    }
+}

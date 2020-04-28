@@ -81,6 +81,13 @@
   font-weight: normal;
   font-style: normal;
 }
+/*delice items font*/
+@font-face {
+  font-family: "andika-italic";
+  src: url("fonts/andika-basic/AndikaNewBasic-I.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
 /*DEFINING FONTS*/
 /*for omf header*/
 /* for omf text other than the header*/
@@ -90,6 +97,7 @@
 /*font for chic francaise's name - home and menu pages*/
 /*font for "menu" of chic francaise - home page - & for items on menu page*/
 /*font for delice papille's name - home and menu pages*/
+/*font for items on menu of delice paille and palette gout - menu page*/
 /*font for palette gout's name - home and menu pages*/
 /*font for "menu" of delice papille and palette gout - home page*/
 /* for the music note for note enchantee*/
@@ -110,6 +118,9 @@
 /*text color for chic francaise starters*/
 /*text color for chic francaise main courses*/
 /*text color for chic francaise deserts*/
+/*darkest color of delice papille name*/
+/*lightest color of delice papille name*/
+/*background color for delice papille*/
 /*shadows home page*/
 /* ELEMENT SIZES home page*/
 /* sizes for the restaurant squares on the home page*/
@@ -251,14 +262,15 @@ footer {
   background-color: #f9f9f9;
 }
 .resto--delice h2 {
-  background-color: #f9f9f9;
-  color: #0887fb;
+  background: linear-gradient(to right, #0023db 0%, 30%, #108dfb 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   font-family: "dancing-script";
   font-size: 3rem;
 }
 .resto--delice p {
   font-family: "montezregular";
-  color: #0887fb;
+  color: #108dfb;
   font-size: 3rem;
 }
 .resto--palette {
@@ -380,6 +392,7 @@ h2 {
 
 .main--chic {
   background-color: #fff5fe;
+  font-family: "serif-beta";
 }
 .main--chic .starters {
   color: #c67412;
@@ -391,11 +404,7 @@ h2 {
   color: #6e4ccc;
 }
 .main--chic h2 {
-  font-family: "serif-beta";
   font-size: 2.5rem;
-}
-.main--chic p {
-  font-family: "serif-beta";
 }
 .main--chic .price {
   font-weight: bold;
@@ -407,6 +416,46 @@ h2 {
   -webkit-text-fill-color: transparent;
   font-family: "croissant-one";
   font-size: 3.5rem;
+}
+
+.main--delice {
+  background-color: #f9f9f9;
+  font-family: "andika-italic";
+  font-size: 1.5rem;
+}
+.main--delice h2 {
+  font-size: 2.5rem;
+}
+.main--delice .price {
+  font-weight: bold;
+}
+
+.resto-header--delice h1 {
+  background: linear-gradient(to right, #0023db 0%, 30%, #108dfb 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: "dancing-script";
+  font-size: 5.25rem;
+}
+
+.main--palette {
+  background-color: #fdfffd;
+  font-family: "andika-italic";
+  font-size: 1.5rem;
+}
+.main--palette h2 {
+  font-size: 2.5rem;
+}
+.main--palette .price {
+  font-weight: bold;
+}
+
+.resto-header--palette h1 {
+  background: linear-gradient(to right bottom, #3d9339 0%, #bfff7e 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: "alegra-sans";
+  font-size: 5.25rem;
 }
 
 /*# sourceMappingURL=style.css.map */
