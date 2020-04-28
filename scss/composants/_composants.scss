@@ -1,3 +1,6 @@
 .btn{
     padding: 2rem;
+    a{
+    @include omf-txt-site ($footer-font-size);
+    }
 }

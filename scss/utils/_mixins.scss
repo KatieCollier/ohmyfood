@@ -1,3 +1,4 @@
+/* mixin for header format*/
 @mixin omf-header {
     height: 170px;
     background-color: $main-bg-color;
@@ -11,20 +12,39 @@
     letter-spacing: -8px;
 }
 
+/* mixin for format of other omf sections*/
 @mixin omf-txt-site ($font-size) {
     background-color: $main-bg-color;
     color: $main-txt-color;
     font-family: $site-font;
     text-align: center;
     font-size: $font-size;
+    text-decoration: none;
 }
 
+/* mixins for Note Enchantee pages*/
 @mixin note-name ($font-size){
     font-family: $note-font;
-    text-transform: initial;
+    color: $note-txt-clr;
     font-size: $font-size;
 }
 
+@mixin note-menu {
+    font-family: $note-menu-font;
+    color: $note-txt-clr;
+    font-size: $menu-size-home;
+    text-transform: uppercase;
+}
+
+@mixin music-note ($font-size) {
+    font-family: $music-font;
+    background: linear-gradient(to right bottom, $music-clr-drk 0%, $music-clr-lgt 100%);
+	-webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: $font-size;
+}
+
+/*Mixins for chic a la francaise pages */
 @mixin chic-name ($font-size){
     background: linear-gradient(to right bottom, $chic-txt-clr-1 0%, $chic-txt-clr-2 100%);
 	        -webkit-background-clip: text;
@@ -33,6 +53,13 @@
             font-size: $font-size;
 }
 
+@mixin chic-menu{
+    font-family: $chic-menu-font;
+    color: $chic-txt-clr-1;
+    font-size: $menu-size-home;
+}
+
+/* mixins for delice des papilles pages*/
 @mixin delice-name ($font-size){
     background-color: $delice-bg-clr;
     color: $delice-txt-clr-2;
@@ -40,6 +67,7 @@
     font-size: $font-size;
 }
 
+/*mixins for palette du gout pages */
 @mixin palette-name ($font-size){
     background: linear-gradient(to right bottom, $palette-txt-clr-1 0%, $palette-txt-clr-2 100%);
 	-webkit-background-clip: text;
@@ -48,10 +76,9 @@
     font-size: $font-size;
 }
 
-@mixin music-note ($font-size) {
-    background: linear-gradient(to right bottom, $music-clr-drk 0%, $music-clr-lgt 100%);
-	-webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    font-family: $music-font;
-    font-size: $font-size;
+/*Mixins for delice & papille menu */
+@mixin del-pal-menu ($color) {
+    font-family: $del-pal-menu;
+    color: $color;
+    font-size: $menu-size-home;
 }

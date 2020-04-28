@@ -1,0 +1,17 @@
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+article{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+section{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}

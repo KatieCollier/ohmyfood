@@ -80,6 +80,13 @@
 /*shadows home page*/
 /* ELEMENT SIZES home page*/
 /* sizes for the restaurant squares on the home page*/
+/* mixin for header format*/
+/* mixin for format of other omf sections*/
+/* mixins for Note Enchantee pages*/
+/*Mixins for chic a la francaise pages */
+/* mixins for delice des papilles pages*/
+/*mixins for palette du gout pages */
+/*Mixins for delice & papille menu */
 body {
   width: 100%;
   max-width: 1500px;
@@ -89,6 +96,18 @@ body {
 
 .btn {
   padding: 2rem;
+}
+.btn a {
+  background-color: #579c87;
+  color: #fdcb46;
+  font-family: "kanitregular";
+  text-align: center;
+  font-size: 1.4rem;
+  text-decoration: none;
+}
+
+a {
+  text-decoration: none;
 }
 
 header {
@@ -103,14 +122,18 @@ header {
   text-align: center;
   letter-spacing: -8px;
 }
+header a {
+  text-decoration: none;
+  color: #fdcb46;
+}
 
-main {
+.main-home {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-article {
+.article-home {
   width: 80%;
   margin: auto;
   display: flex;
@@ -128,35 +151,33 @@ article {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  font-size: 3rem;
   box-shadow: 7px 7px 7px rgba(0, 0, 0, 0.1), -7px 7px 7px rgba(0, 0, 0, 0.1), -7px -7px 7px rgba(0, 0, 0, 0.1), 7px -7px 7px rgba(0, 0, 0, 0.1);
 }
 .resto--note {
   background-color: #fcdfdb;
-  color: #3c1218;
-  font-family: "komika_textregular";
-  text-transform: uppercase;
-}
-.resto--note h2 {
-  font-family: "merienda";
-  text-transform: initial;
-  font-size: 2rem;
-  margin: 0px 0px 10% 0px;
 }
 .resto--note strong {
+  font-family: "noto-sans";
   background: linear-gradient(to right bottom, #f04a5e 0%, #f78f6a 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  font-family: "noto-sans";
   font-size: 3rem;
 }
+.resto--note h2 {
+  font-family: "merienda";
+  color: #3c1218;
+  font-size: 2rem;
+  margin: 0px 0px 10% 0px;
+}
 .resto--note p {
+  font-family: "komika_textregular";
+  color: #3c1218;
+  font-size: 3rem;
+  text-transform: uppercase;
   margin: 0px;
 }
 .resto--chic {
   background-color: #fff5fe;
-  color: #c77412;
-  font-family: "serif-beta";
 }
 .resto--chic h2 {
   background: linear-gradient(to right bottom, #c77412 0%, #905bfd 100%);
@@ -165,10 +186,13 @@ article {
   font-family: "croissant-one";
   font-size: 2rem;
 }
+.resto--chic p {
+  font-family: "serif-beta";
+  color: #c77412;
+  font-size: 3rem;
+}
 .resto--delice {
   background-color: #f9f9f9;
-  color: #0887fb;
-  font-family: "montezregular";
 }
 .resto--delice h2 {
   background-color: #f9f9f9;
@@ -176,16 +200,24 @@ article {
   font-family: "montezregular";
   font-size: 3rem;
 }
+.resto--delice p {
+  font-family: "montezregular";
+  color: #0887fb;
+  font-size: 3rem;
+}
 .resto--palette {
   background-color: #fdfffd;
-  color: #3d9339;
-  font-family: "montezregular";
 }
 .resto--palette h2 {
   background: linear-gradient(to right bottom, #3d9339 0%, #bfff7e 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-family: "alegra-sans";
+  font-size: 3rem;
+}
+.resto--palette p {
+  font-family: "montezregular";
+  color: #3d9339;
   font-size: 3rem;
 }
 .resto_name {
@@ -200,6 +232,7 @@ article {
   font-family: "kanitregular";
   text-align: center;
   font-size: 2.5rem;
+  text-decoration: none;
   width: 400px;
   height: 70px;
   display: flex;
@@ -224,6 +257,25 @@ footer {
   font-family: "kanitregular";
   text-align: center;
   font-size: 1.4rem;
+  text-decoration: none;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+article {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
 /*# sourceMappingURL=style.css.map */
