@@ -124,10 +124,10 @@
 /*shadows home page*/
 /* ELEMENT SIZES home page*/
 /* sizes for the restaurant squares on the home page*/
+/*sizes for soon animation*/
 /*ANIMATIONS*/
 /*animation durations*/
-/* mixin for header format*/
-/* mixin for format of other omf sections*/
+/* mixin for format of omf sections, excluding header*/
 /*mixin for box shadows*/
 /* mixins for Note Enchantee pages*/
 /*Mixins for chic a la francaise pages */
@@ -135,6 +135,7 @@
 /*mixins for palette du gout pages */
 /*Mixins for delice & papille menu */
 /*Mixin for underlining course names in menu pages*/
+/*media query mixin for responsiveness*/
 @keyframes wiggle {
   0% {
     transform: rotate(0deg);
@@ -221,7 +222,7 @@
 }
 body {
   width: 100%;
-  max-width: 1500px;
+  max-width: 1200px;
   margin: auto;
   box-sizing: border-box;
 }
@@ -237,70 +238,93 @@ body {
   font-size: 1.4rem;
   text-decoration: none;
 }
+@media all and (max-width: 1024px) {
+  .btn a {
+    font-size: 1rem;
+  }
+}
 .btn:hover {
   animation: wiggle 200ms ease-in-out 3;
-}
-
-a {
-  text-decoration: none;
 }
 
 main {
   width: 80%;
   margin: 5% 10% 7% 10%;
 }
+@media all and (max-width: 1024px) {
+  main {
+    width: 100%;
+    margin: auto;
+  }
+}
+
+a {
+  text-decoration: none;
+}
 
 header {
-  height: 170px;
+  height: 100px;
   background-color: #579c87;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  font-size: 2.7rem;
+  font-size: 2.3rem;
+  letter-spacing: -8px;
   color: #fdcb46;
   font-family: "colaborate-mediumregular";
   text-align: center;
-  letter-spacing: -8px;
 }
 header a {
   text-decoration: none;
   color: #fdcb46;
+}
+@media all and (max-width: 1024px) {
+  header {
+    font-size: 1.5rem;
+    letter-spacing: -4px;
+    margin-bottom: 50px;
+  }
 }
 
 footer {
   position: fixed;
   bottom: 0;
   width: 100%;
-  max-width: 1500px;
-  height: 70px;
+  max-width: 1200px;
+  height: 50px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
   background-color: #579c87;
-  color: #fdcb46;
-  font-family: "kanitregular";
-  text-align: center;
-  font-size: 1.4rem;
-  text-decoration: none;
+}
+@media all and (max-width: 1024px) {
+  footer {
+    width: 100%;
+  }
 }
 
 .main-home {
+  /* set the main part of the home page so that restaurant boxes 
+  are above soon button and all is centered*/
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
 .article-home {
+  /*set part containing restaurant boxes so that they are 
+  displayed in rows but sent back to the line if the containing part is not big enough*/
   margin: auto;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-around;
-  margin-bottom: 90px;
+  margin-bottom: 30px;
 }
 
 .resto {
+  /*set properties common to all restaurant boxes: size, alignement, shadow*/
   width: 450px;
   height: 570px;
   margin: 15px 15px 60px 15px;
@@ -310,7 +334,15 @@ footer {
   align-items: center;
   box-shadow: 7px 7px 7px rgba(0, 0, 0, 0.1), -7px 7px 7px rgba(0, 0, 0, 0.1), -7px -7px 7px rgba(0, 0, 0, 0.1), 7px -7px 7px rgba(0, 0, 0, 0.1);
 }
+@media all and (max-width: 1024px) {
+  .resto {
+    width: 315px;
+    height: 399px;
+    margin-bottom: 30px;
+  }
+}
 .resto--note {
+  /*set properties for restaurant box Nb1- note enchantee*/
   background-color: #fcdfdb;
 }
 .resto--note strong {
@@ -326,6 +358,12 @@ footer {
   font-size: 2rem;
   margin: 0px 0px 10% 0px;
 }
+@media all and (max-width: 1024px) {
+  .resto--note h2 {
+    font-size: 1.5rem;
+    margin: 0;
+  }
+}
 .resto--note p {
   font-family: "komika_textregular";
   color: #3c1218;
@@ -334,6 +372,7 @@ footer {
   margin: 0px;
 }
 .resto--chic {
+  /*set properties for restaurant box Nb2- chic francaise*/
   background-color: #fff5fe;
 }
 .resto--chic h2 {
@@ -343,12 +382,24 @@ footer {
   font-family: "croissant-one";
   font-size: 2rem;
 }
+@media all and (max-width: 1024px) {
+  .resto--chic h2 {
+    font-size: 1.5rem;
+    margin: 40px 0px 0px 0px;
+  }
+}
 .resto--chic p {
   font-family: "serif-beta";
   color: #c77412;
   font-size: 3rem;
 }
+@media all and (max-width: 1024px) {
+  .resto--chic p {
+    margin: 0;
+  }
+}
 .resto--delice {
+  /*set properties for restaurant box Nb3- note delice papilles*/
   background-color: #f9f9f9;
 }
 .resto--delice h2 {
@@ -358,12 +409,24 @@ footer {
   font-family: "dancing-script";
   font-size: 3rem;
 }
+@media all and (max-width: 1024px) {
+  .resto--delice h2 {
+    font-size: 2.25rem;
+    margin: 40px 0px 0px 0px;
+  }
+}
 .resto--delice p {
   font-family: "montezregular";
   color: #108dfb;
   font-size: 3rem;
 }
+@media all and (max-width: 1024px) {
+  .resto--delice p {
+    margin: 0;
+  }
+}
 .resto--palette {
+  /*set properties for restaurant box Nb4- note palette gout*/
   background-color: #fdfffd;
 }
 .resto--palette h2 {
@@ -373,26 +436,40 @@ footer {
   font-family: "alegra-sans";
   font-size: 3rem;
 }
+@media all and (max-width: 1024px) {
+  .resto--palette h2 {
+    font-size: 2.25rem;
+    margin: 40px 0px 0px 0px;
+  }
+}
 .resto--palette p {
   font-family: "montezregular";
   color: #3d9339;
   font-size: 3rem;
 }
+@media all and (max-width: 1024px) {
+  .resto--palette p {
+    margin: 0;
+  }
+}
 .resto_name {
+  /*set properties common to all restaurant names within the boxes*/
   width: 420px;
   height: 210px;
   text-align: center;
 }
 .resto_name:hover {
+  /*add animation for restaurant names*/
   animation: enlarge 400ms forwards;
 }
 
 .soon {
+  /*set properties for soon button - doesn't do anything*/
   background-color: #579c87;
   color: #fdcb46;
   font-family: "kanitregular";
   text-align: center;
-  font-size: 2.5rem;
+  font-size: 2.2rem;
   text-decoration: none;
   width: 400px;
   height: 70px;
@@ -403,23 +480,46 @@ footer {
   margin-bottom: 50px;
   border-radius: 20px;
 }
+@media all and (max-width: 1024px) {
+  .soon {
+    width: 250px;
+    height: 50px;
+    margin-bottom: 100px;
+    font-size: 1.65rem;
+  }
+}
 
 .suspension {
+  /*set container for suspension marks in soon button*/
   width: 40px;
-  height: 30px;
+  height: 25px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: flex-end;
-  margin-left: 7px;
+  margin-left: 10px;
+}
+@media all and (max-width: 1024px) {
+  .suspension {
+    width: 30px;
+    height: 20px;
+  }
 }
 
 .dot {
+  /*set properties for individual dots*/
   background-color: #fdcb46;
-  width: 7px;
-  height: 7px;
+  width: 5px;
+  height: 5px;
+}
+@media all and (max-width: 1024px) {
+  .dot {
+    width: 3.75px;
+    height: 3.75px;
+  }
 }
 .dot--1 {
+  /*add animation to suspension marks*/
   animation: appear1 2.5s 500ms both infinite;
 }
 .dot--2 {

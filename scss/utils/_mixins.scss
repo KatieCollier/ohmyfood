@@ -1,18 +1,4 @@
-/* mixin for header format*/
-@mixin omf-header {
-    height: 170px;
-    background-color: $main-bg-color;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    font-size: 2.7rem;
-    color: $main-txt-color;
-    font-family: $header-font;
-    text-align: center;
-    letter-spacing: -8px;
-}
-
-/* mixin for format of other omf sections*/
+/* mixin for format of omf sections, excluding header*/
 @mixin omf-txt-site ($font-size) {
     background-color: $main-bg-color;
     color: $main-txt-color;
@@ -102,4 +88,9 @@
     transform: scaleX(0);
     transform-origin: left;
     transition: transform 400ms;
+}
+
+/*media query mixin for responsiveness*/
+@mixin small-screen{
+    @media all and (max-width: 1024px){@content};
 }

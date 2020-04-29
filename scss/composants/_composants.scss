@@ -2,8 +2,12 @@
     padding: 2rem;
     a{
     @include omf-txt-site ($footer-font-size);
+    @include small-screen{
+        font-size: 1rem;
+    }
     }
     &:hover{
         animation: wiggle 200ms ease-in-out 3;
     }
+    
 }

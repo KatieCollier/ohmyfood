@@ -1,19 +1,21 @@
-.main-home{
+.main-home{/* set the main part of the home page so that restaurant boxes 
+    are above soon button and all is centered*/
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.article-home{
+.article-home{/*set part containing restaurant boxes so that they are 
+    displayed in rows but sent back to the line if the containing part is not big enough*/
     margin: auto;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
-    margin-bottom: 90px;
+    margin-bottom: 30px;
 }
 
-.resto{
+.resto{/*set properties common to all restaurant boxes: size, alignement, shadow*/
     width: $square-width;
     height: $square-height;
     margin: 15px 15px 60px 15px;
@@ -22,7 +24,12 @@
     justify-content: center;
     align-items: center;
     @include shadow($shadow-size);
-    &--note{
+    @include small-screen{
+        width: 0.7*$square-width;
+        height: 0.7*$square-height;
+        margin-bottom: 30px;
+    }
+    &--note{/*set properties for restaurant box Nb1- note enchantee*/
         background-color: $note-bg-clr;
         strong{
             @include music-note ($music-size-home);
@@ -30,50 +37,75 @@
         h2{
             @include note-name($resto-size-home);
             margin: 0px 0px 10% 0px;
+            @include small-screen{
+                font-size: 0.75*$resto-size-home;
+                margin: 0;
+            }
         }
         p{
             @include note-menu;
             margin: 0px;
         }
     }
-    &--chic{
+    &--chic{/*set properties for restaurant box Nb2- chic francaise*/
         background-color: $chic-bg-clr;
         h2{
             @include chic-name ($resto-size-home);
+            @include small-screen{
+                font-size: 0.75*$resto-size-home;
+                margin: 40px 0px 0px 0px;
+            }
         }
         p{
             @include chic-menu;
+            @include small-screen{
+                margin: 0;
+            }
         }
     }
-    &--delice{
+    &--delice{/*set properties for restaurant box Nb3- note delice papilles*/
         background-color: $delice-bg-clr;
         h2{
             @include delice-name (1.5*$resto-size-home);
+            @include small-screen{
+                font-size: 1.125*$resto-size-home;
+                margin: 40px 0px 0px 0px;
+            }
         }
         p{
             @include del-pal-menu ($delice-txt-clr-lgt);
+            @include small-screen{
+                margin: 0;
+            }
         }
     }
-    &--palette{
+    &--palette{/*set properties for restaurant box Nb4- note palette gout*/
         background-color: $palette-bg-clr;
         h2{
-            @include palette-name (1.5*$resto-size-home)
+            @include palette-name (1.5*$resto-size-home);
+            @include small-screen{
+                font-size: 1.125*$resto-size-home;
+                margin: 40px 0px 0px 0px;
+            }
         }
         p{
             @include del-pal-menu ($palette-txt-clr-1);
+            @include small-screen{
+                margin: 0;
+            }
         }
     }
-    &_name{
+    &_name{/*set properties common to all restaurant names within the boxes*/
         width: 420px;
         height: 210px;
         text-align: center;
-        &:hover{
+        &:hover{/*add animation for restaurant names*/
             animation: enlarge 400ms forwards;
         }
     }
 }
 
-.soon{
+.soon{/*set properties for soon button - doesn't do anything*/
     @include omf-txt-site ($soon-font-size);
     width: 400px;
     height: 70px;
@@ -83,22 +115,37 @@
     align-items: center;
     margin-bottom: 50px;
     border-radius: 20px;
+    @include small-screen{
+        width: 250px;
+        height: 50px;
+        margin-bottom: 100px;
+        font-size: 0.75*$soon-font-size;
+    }
 }
 
-.suspension{
+.suspension{/*set container for suspension marks in soon button*/
     width: 40px;
-    height: 30px;
+    height: 25px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: flex-end;
-    margin-left: 7px;
+    margin-left: 2*$dot-size;
+    @include small-screen{
+        width: 30px;
+        height: 20px;
+    }
 }
-.dot{
+
+.dot{/*set properties for individual dots*/
     background-color: $main-txt-color;
-    width: 7px;
-    height: 7px;
-    &--1{
+    width: $dot-size;
+    height: $dot-size;
+    @include small-screen{
+        width: 0.75*$dot-size;
+        height: 0.75*$dot-size;
+    }
+    &--1{/*add animation to suspension marks*/
         animation: appear1 $dots-dur $dots-delay both infinite;
     }
     &--2{
