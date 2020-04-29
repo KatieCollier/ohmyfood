@@ -473,26 +473,42 @@ h2 {
   font-size: 2.5rem;
   position: relative;
 }
-.main--note .h2::before {
+.main--note .h2--starters::before {
   /*add line under course titles ready for animation*/
   content: "";
   border-bottom: 5px solid #3c1218;
   position: absolute;
   bottom: 0;
-  width: 50%;
+  width: 150px;
   transform: scaleX(0);
   transform-origin: left;
   transition: transform 400ms;
 }
-.main--note .h2--starters:hover::before {
+.main--note .h2--courses::before {
+  /*add line under course titles ready for animation*/
+  content: "";
+  border-bottom: 5px solid #3c1218;
+  position: absolute;
+  bottom: 0;
+  width: 275px;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 400ms;
+}
+.main--note .h2--desert::before {
+  /*add line under course titles ready for animation*/
+  content: "";
+  border-bottom: 5px solid #3c1218;
+  position: absolute;
+  bottom: 0;
+  width: 340px;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 400ms;
+}
+.main--note .h2:hover::before {
   /*add hover animations*/
-  transform: scaleX(0.3);
-}
-.main--note .h2--courses:hover::before {
-  transform: scaleX(0.5);
-}
-.main--note .h2--desert:hover::before {
-  transform: scaleX(0.65);
+  transform: scaleX(1);
 }
 .main--note p {
   font-family: "sorts_mill_goudyitalic";
@@ -548,7 +564,7 @@ h2 {
   border-bottom: 5px solid #c67412;
   position: absolute;
   bottom: 0;
-  width: 50%;
+  width: 545px;
   transform: scaleX(0);
   transform-origin: left;
   transition: transform 400ms;
@@ -566,7 +582,7 @@ h2 {
   border-bottom: 5px solid #a56799;
   position: absolute;
   bottom: 0;
-  width: 50%;
+  width: 530px;
   transform: scaleX(0);
   transform-origin: left;
   transition: transform 400ms;
@@ -584,7 +600,7 @@ h2 {
   border-bottom: 5px solid #6e4ccc;
   position: absolute;
   bottom: 0;
-  width: 50%;
+  width: 550px;
   transform: scaleX(0);
   transform-origin: left;
   transition: transform 400ms;
@@ -614,26 +630,42 @@ h2 {
   font-size: 2.5rem;
   position: relative;
 }
-.main--delice .h2::before {
+.main--delice .h2--starters::before {
   /*add line under course titles ready for animation*/
   content: "";
   border-bottom: 5px solid black;
   position: absolute;
   bottom: 0;
-  width: 50%;
+  width: 400px;
   transform: scaleX(0);
   transform-origin: left;
   transition: transform 400ms;
 }
-.main--delice .h2--starters:hover::before {
+.main--delice .h2--courses::before {
+  /*add line under course titles ready for animation*/
+  content: "";
+  border-bottom: 5px solid black;
+  position: absolute;
+  bottom: 0;
+  width: 370px;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 400ms;
+}
+.main--delice .h2--desert::before {
+  /*add line under course titles ready for animation*/
+  content: "";
+  border-bottom: 5px solid black;
+  position: absolute;
+  bottom: 0;
+  width: 360px;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 400ms;
+}
+.main--delice .h2:hover::before {
   /*add hover animations*/
-  transform: scaleX(0.75);
-}
-.main--delice .h2--courses:hover::before {
-  transform: scaleX(0.7);
-}
-.main--delice .h2--desert:hover::before {
-  transform: scaleX(0.67);
+  transform: scaleX(1);
 }
 .main--delice .price {
   font-weight: bold;
@@ -657,27 +689,42 @@ h2 {
   /*set properties for course titles*/
   font-size: 2.5rem;
   position: relative;
-  /*add hover animations*/
 }
-.main--palette .h2::before {
+.main--palette .h2--starters::before {
   /*add line under course titles ready for animation*/
   content: "";
   border-bottom: 5px solid black;
   position: absolute;
   bottom: 0;
-  width: 50%;
+  width: 160px;
   transform: scaleX(0);
   transform-origin: left;
   transition: transform 400ms;
 }
-.main--palette .h2--starters:hover::before {
-  transform: scaleX(0.3);
+.main--palette .h2--courses::before {
+  /*add line under course titles ready for animation*/
+  content: "";
+  border-bottom: 5px solid black;
+  position: absolute;
+  bottom: 0;
+  width: 325px;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 400ms;
 }
-.main--palette .h2--courses:hover::before {
-  transform: scaleX(0.6);
+.main--palette .h2--desert::before {
+  /*add line under course titles ready for animation*/
+  content: "";
+  border-bottom: 5px solid black;
+  position: absolute;
+  bottom: 0;
+  width: 360px;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 400ms;
 }
-.main--palette .h2--desert:hover::before {
-  transform: scaleX(0.67);
+.main--palette .h2:hover::before {
+  transform: scaleX(1);
 }
 .main--palette .price {
   /*make prices on list bold*/

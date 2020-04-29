@@ -5,17 +5,17 @@
     .h2{/*set properties for course titles*/
         font-size: $courses-font-size;
         position: relative;
-        &::before{/*add line under course titles ready for animation*/
-           @include underline; 
-        }/*add hover animations*/
-        &--starters:hover::before{
-            transform:scaleX(0.3);
+        &--starters::before{/*add line under course titles ready for animation*/
+           @include underline (black, 160px); 
         }
-        &--courses:hover::before{
-            transform:scaleX(0.6);
-        }
-        &--desert:hover::before{
-            transform:scaleX(0.67);
+        &--courses::before{/*add line under course titles ready for animation*/
+            @include underline (black, 325px); 
+         }
+         &--desert::before{/*add line under course titles ready for animation*/
+            @include underline (black, 360px); 
+         }
+        &:hover::before{
+            transform:scaleX(1);
         }
     }
     .price{/*make prices on list bold*/

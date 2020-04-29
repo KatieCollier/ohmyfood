@@ -9,7 +9,7 @@
         color: $chic-items-starters;
         h2{
             &::before{/*add line under course titles ready for animation*/
-                @include underline ($chic-items-starters); 
+                @include underline ($chic-items-starters, 545px); 
              }
             &:hover::before{/*add hover animations*/
                 transform:scaleX(0.9);
@@ -20,7 +20,7 @@
         color: $chic-items-course;
         h2{
             &::before{/*add line under course titles ready for animation*/
-                @include underline ($chic-items-course); 
+                @include underline ($chic-items-course, 530px); 
              }
             &:hover::before{/*add hover animations*/
                 transform:scaleX(0.68);
@@ -31,7 +31,7 @@
         color: $chic-items-desert;
         h2{
             &::before{/*add line under course titles ready for animation*/
-                @include underline ($chic-items-desert); 
+                @include underline ($chic-items-desert, 550px); 
              }
             &:hover::before{/*add hover animations*/
                 transform:scaleX(0.8);

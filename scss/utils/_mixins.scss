@@ -93,13 +93,13 @@
 }
 
 /*Mixin for underlining course names in menu pages*/
-@mixin underline ($color: black){
+@mixin underline ($color: black, $width:50%){
     content:"";
-            border-bottom: 5px solid $color;
-            position: absolute;
-            bottom: 0;
-            width:50%;
-            transform: scaleX(0);
-            transform-origin: left;
-            transition: transform 400ms;
+    border-bottom: 5px solid $color;
+    position: absolute;
+    bottom: 0;
+    width: $width;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 400ms;
 }

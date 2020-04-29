@@ -5,18 +5,19 @@
     .h2{
         font-size: $courses-font-size;
         position: relative;
-        &::before{/*add line under course titles ready for animation*/
-           @include underline; 
+        &--starters::before{/*add line under course titles ready for animation*/
+           @include underline (black, 400px); 
         }
-        &--starters:hover::before{/*add hover animations*/
-            transform:scaleX(0.75);
+        &--courses::before{/*add line under course titles ready for animation*/
+            @include underline (black, 370px); 
+         }
+         &--desert::before{/*add line under course titles ready for animation*/
+            @include underline (black, 360px); 
+         }
+        &:hover::before{/*add hover animations*/
+            transform:scaleX(1);
         }
-        &--courses:hover::before{
-            transform:scaleX(0.7);
-        }
-        &--desert:hover::before{
-            transform:scaleX(0.67);
-        }
+        
     }
     .price{
         font-weight: bold;

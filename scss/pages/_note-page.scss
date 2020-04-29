@@ -4,17 +4,17 @@
         @include note-name ($courses-font-size);
         font-size: $courses-font-size;
         position: relative;
-        &::before{/*add line under course titles ready for animation*/
-           @include underline ($note-txt-clr); 
+        &--starters::before{/*add line under course titles ready for animation*/
+           @include underline ($note-txt-clr, 150px); 
         }
-        &--starters:hover::before{/*add hover animations*/
-            transform:scaleX(0.3);
+        &--courses::before{/*add line under course titles ready for animation*/
+            @include underline ($note-txt-clr, 275px); 
         }
-        &--courses:hover::before{
-            transform:scaleX(0.5);
+        &--desert::before{/*add line under course titles ready for animation*/
+            @include underline ($note-txt-clr, 340px); 
         }
-        &--desert:hover::before{
-            transform:scaleX(0.65);
+        &:hover::before{/*add hover animations*/
+            transform:scaleX(1);
         }
     }
     p{
