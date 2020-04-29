@@ -2,13 +2,28 @@
     background-color: $delice-bg-clr;
     font-family: $del-pal-item-font;
     font-size: $items-font-size;
-    h2{
+    .h2{
         font-size: $courses-font-size;
+        position: relative;
+        &::before{/*add line under course titles ready for animation*/
+           @include underline; 
+        }
+        &--starters:hover::before{/*add hover animations*/
+            transform:scaleX(0.75);
+        }
+        &--courses:hover::before{
+            transform:scaleX(0.7);
+        }
+        &--desert:hover::before{
+            transform:scaleX(0.67);
+        }
     }
     .price{
         font-weight: bold;
     }
 }
+
+
 
 .resto-header--delice {
     h1{

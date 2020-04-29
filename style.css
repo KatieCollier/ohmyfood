@@ -132,6 +132,7 @@
 /* mixins for delice des papilles pages*/
 /*mixins for palette du gout pages */
 /*Mixins for delice & papille menu */
+/*Mixin for underlining course names in menu pages*/
 body {
   width: 100%;
   max-width: 1500px;
@@ -313,8 +314,11 @@ footer {
 .main-menu {
   box-shadow: 7px 7px 7px rgba(0, 0, 0, 0.1), -7px 7px 7px rgba(0, 0, 0, 0.1), -7px -7px 7px rgba(0, 0, 0, 0.1), 7px -7px 7px rgba(0, 0, 0, 0.1);
 }
-.main-menu p {
-  font-size: 1.5rem;
+.main-menu article {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 5%;
 }
 .main-menu section {
   display: flex;
@@ -322,22 +326,18 @@ footer {
   justify-content: space-between;
   padding: 0% 5% 0% 5%;
 }
-
-article {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  padding: 5%;
-}
-
-h2 {
-  text-align: center;
+.main-menu p {
+  font-size: 1.5rem;
 }
 
 .resto-header {
   text-align: center;
   padding-top: 2%;
   font-size: 2rem;
+}
+
+h2 {
+  text-align: center;
 }
 
 .resto-footer {
@@ -348,10 +348,33 @@ h2 {
 .main--note {
   background-color: #fcdfdb;
 }
-.main--note h2 {
+.main--note .h2 {
   font-family: "merienda";
   color: #3c1218;
   font-size: 2.5rem;
+  font-size: 2.5rem;
+  position: relative;
+}
+.main--note .h2::before {
+  /*add line under course titles ready for animation*/
+  content: "";
+  border-bottom: 5px solid #3c1218;
+  position: absolute;
+  bottom: 0;
+  width: 50%;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 400ms;
+}
+.main--note .h2--starters:hover::before {
+  /*add hover animations*/
+  transform: scaleX(0.3);
+}
+.main--note .h2--courses:hover::before {
+  transform: scaleX(0.5);
+}
+.main--note .h2--desert:hover::before {
+  transform: scaleX(0.65);
 }
 .main--note p {
   font-family: "sorts_mill_goudyitalic";
@@ -394,17 +417,63 @@ h2 {
   background-color: #fff5fe;
   font-family: "serif-beta";
 }
+.main--chic h2 {
+  font-size: 2.5rem;
+  position: relative;
+}
 .main--chic .starters {
   color: #c67412;
+}
+.main--chic .starters h2::before {
+  /*add line under course titles ready for animation*/
+  content: "";
+  border-bottom: 5px solid #c67412;
+  position: absolute;
+  bottom: 0;
+  width: 50%;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 400ms;
+}
+.main--chic .starters h2:hover::before {
+  /*add hover animations*/
+  transform: scaleX(0.9);
 }
 .main--chic .main-courses {
   color: #a56799;
 }
+.main--chic .main-courses h2::before {
+  /*add line under course titles ready for animation*/
+  content: "";
+  border-bottom: 5px solid #a56799;
+  position: absolute;
+  bottom: 0;
+  width: 50%;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 400ms;
+}
+.main--chic .main-courses h2:hover::before {
+  /*add hover animations*/
+  transform: scaleX(0.68);
+}
 .main--chic .desert {
   color: #6e4ccc;
 }
-.main--chic h2 {
-  font-size: 2.5rem;
+.main--chic .desert h2::before {
+  /*add line under course titles ready for animation*/
+  content: "";
+  border-bottom: 5px solid #6e4ccc;
+  position: absolute;
+  bottom: 0;
+  width: 50%;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 400ms;
+}
+.main--chic .desert h2:hover::before {
+  /*add hover animations*/
+  transform: scaleX(0.8);
 }
 .main--chic .price {
   font-weight: bold;
@@ -423,8 +492,30 @@ h2 {
   font-family: "andika-italic";
   font-size: 1.5rem;
 }
-.main--delice h2 {
+.main--delice .h2 {
   font-size: 2.5rem;
+  position: relative;
+}
+.main--delice .h2::before {
+  /*add line under course titles ready for animation*/
+  content: "";
+  border-bottom: 5px solid black;
+  position: absolute;
+  bottom: 0;
+  width: 50%;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 400ms;
+}
+.main--delice .h2--starters:hover::before {
+  /*add hover animations*/
+  transform: scaleX(0.75);
+}
+.main--delice .h2--courses:hover::before {
+  transform: scaleX(0.7);
+}
+.main--delice .h2--desert:hover::before {
+  transform: scaleX(0.67);
 }
 .main--delice .price {
   font-weight: bold;
@@ -439,17 +530,45 @@ h2 {
 }
 
 .main--palette {
+  /*set main properties for page excluing header and footer*/
   background-color: #fdfffd;
   font-family: "andika-italic";
   font-size: 1.5rem;
 }
-.main--palette h2 {
+.main--palette .h2 {
+  /*set properties for course titles*/
   font-size: 2.5rem;
+  position: relative;
+  /*add hover animations*/
+}
+.main--palette .h2::before {
+  /*add line under course titles ready for animation*/
+  content: "";
+  border-bottom: 5px solid black;
+  position: absolute;
+  bottom: 0;
+  width: 50%;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 400ms;
+}
+.main--palette .h2--starters:hover::before {
+  transform: scaleX(0.3);
+}
+.main--palette .h2--courses:hover::before {
+  transform: scaleX(0.6);
+}
+.main--palette .h2--desert:hover::before {
+  transform: scaleX(0.67);
 }
 .main--palette .price {
+  /*make prices on list bold*/
   font-weight: bold;
 }
 
+.resto-header--palette {
+  /*set properties and font for the restaurant name*/
+}
 .resto-header--palette h1 {
   background: linear-gradient(to right bottom, #3d9339 0%, #bfff7e 100%);
   -webkit-background-clip: text;

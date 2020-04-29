@@ -1,17 +1,42 @@
 .main--chic{
     background-color: $chic-bg-clr;
     font-family: $chic-menu-font;
+    h2{
+        font-size: $courses-font-size;
+        position: relative;
+    }
     .starters{
         color: $chic-items-starters;
+        h2{
+            &::before{/*add line under course titles ready for animation*/
+                @include underline ($chic-items-starters); 
+             }
+            &:hover::before{/*add hover animations*/
+                transform:scaleX(0.9);
+            }  
+        }
     }
     .main-courses{
         color: $chic-items-course;
+        h2{
+            &::before{/*add line under course titles ready for animation*/
+                @include underline ($chic-items-course); 
+             }
+            &:hover::before{/*add hover animations*/
+                transform:scaleX(0.68);
+            }  
+        }
     }
     .desert{
         color: $chic-items-desert;
-    }
-    h2{
-        font-size: $courses-font-size;
+        h2{
+            &::before{/*add line under course titles ready for animation*/
+                @include underline ($chic-items-desert); 
+             }
+            &:hover::before{/*add hover animations*/
+                transform:scaleX(0.8);
+            }  
+        }
     }
     .price{
         font-weight: bold;

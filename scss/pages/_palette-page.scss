@@ -1,17 +1,31 @@
-.main--palette{
+.main--palette{/*set main properties for page excluing header and footer*/
     background-color: $palette-bg-clr;
     font-family: $del-pal-item-font;
     font-size: $items-font-size;
-    h2{
+    .h2{/*set properties for course titles*/
         font-size: $courses-font-size;
+        position: relative;
+        &::before{/*add line under course titles ready for animation*/
+           @include underline; 
+        }/*add hover animations*/
+        &--starters:hover::before{
+            transform:scaleX(0.3);
+        }
+        &--courses:hover::before{
+            transform:scaleX(0.6);
+        }
+        &--desert:hover::before{
+            transform:scaleX(0.67);
+        }
     }
-    .price{
+    .price{/*make prices on list bold*/
         font-weight: bold;
     }
 }
 
-.resto-header--palette {
+.resto-header--palette {/*set properties and font for the restaurant name*/
     h1{
         @include palette-name(1.5*$resto-size-menu);
     }
 }
+
