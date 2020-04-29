@@ -3,4 +3,7 @@
     a{
     @include omf-txt-site ($footer-font-size);
     }
+    &:hover{
+        animation: wiggle 200ms ease-in-out 3;
+    }
 }
