@@ -278,6 +278,7 @@ header {
   color: #fdcb46;
   font-family: "colaborate-mediumregular";
   text-align: center;
+  margin-bottom: 50px;
 }
 header a {
   text-decoration: none;
@@ -287,7 +288,6 @@ header a {
   header {
     font-size: 1.5rem;
     letter-spacing: -4px;
-    margin-bottom: 50px;
   }
 }
 
@@ -367,7 +367,7 @@ footer {
   font-family: "merienda";
   color: #3c1218;
   font-size: 2rem;
-  margin: 0px 0px 10% 0px;
+  margin: 0px 0px 30px 0px;
 }
 @media all and (max-width: 500px) {
   .resto--note h2 {
@@ -1066,6 +1066,13 @@ h2 {
   .resto-header--palette h1 {
     font-size: 2.7rem;
   }
+}
+
+.main-legal {
+  padding: 10px;
+}
+.main-legal h2 {
+  text-align: left;
 }
 
 /*# sourceMappingURL=style.css.map */
