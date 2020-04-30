@@ -21,8 +21,7 @@ header{
         letter-spacing: -8px;
         color: $main-txt-color;
         font-family: $header-font;
-        text-align: center;
-        
+        text-align: center;        
     a{
         text-decoration: none;
         color: $main-txt-color;
@@ -45,7 +44,4 @@ footer{
     justify-content: space-between;
     align-items: center;
     background-color: $main-bg-color;
-    @include small-screen{
-        width: 100%;
-    }
 }

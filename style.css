@@ -124,9 +124,9 @@
 /*shadows home page*/
 /* ELEMENT SIZES home page*/
 /* sizes for the restaurant squares on the home page*/
-/*sizes for soon animation*/
 /*ANIMATIONS*/
 /*animation durations*/
+/*sizes for soon animation*/
 /* mixin for format of omf sections, excluding header*/
 /*mixin for box shadows*/
 /* mixins for Note Enchantee pages*/
@@ -230,6 +230,11 @@ body {
 .btn {
   padding: 2rem;
 }
+@media all and (max-width: 1000px) {
+  .btn {
+    padding: 10px;
+  }
+}
 .btn a {
   background-color: #579c87;
   color: #fdcb46;
@@ -238,7 +243,7 @@ body {
   font-size: 1.4rem;
   text-decoration: none;
 }
-@media all and (max-width: 1024px) {
+@media all and (max-width: 1000px) {
   .btn a {
     font-size: 1rem;
   }
@@ -251,7 +256,7 @@ main {
   width: 80%;
   margin: 5% 10% 7% 10%;
 }
-@media all and (max-width: 1024px) {
+@media all and (max-width: 1000px) {
   main {
     width: 100%;
     margin: auto;
@@ -278,7 +283,7 @@ header a {
   text-decoration: none;
   color: #fdcb46;
 }
-@media all and (max-width: 1024px) {
+@media all and (max-width: 1000px) {
   header {
     font-size: 1.5rem;
     letter-spacing: -4px;
@@ -298,11 +303,6 @@ footer {
   align-items: center;
   background-color: #579c87;
 }
-@media all and (max-width: 1024px) {
-  footer {
-    width: 100%;
-  }
-}
 
 .main-home {
   /* set the main part of the home page so that restaurant boxes 
@@ -310,6 +310,8 @@ footer {
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 100%;
+  margin: auto;
 }
 
 .article-home {
@@ -317,10 +319,20 @@ footer {
   displayed in rows but sent back to the line if the containing part is not big enough*/
   margin: auto;
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-around;
+  flex-direction: column;
+  align-items: center;
   margin-bottom: 30px;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+@media all and (max-width: 1000px) {
+  .row {
+    flex-direction: column;
+  }
 }
 
 .resto {
@@ -334,11 +346,10 @@ footer {
   align-items: center;
   box-shadow: 7px 7px 7px rgba(0, 0, 0, 0.1), -7px 7px 7px rgba(0, 0, 0, 0.1), -7px -7px 7px rgba(0, 0, 0, 0.1), 7px -7px 7px rgba(0, 0, 0, 0.1);
 }
-@media all and (max-width: 1024px) {
+@media all and (max-width: 470px) {
   .resto {
-    width: 315px;
-    height: 399px;
-    margin-bottom: 30px;
+    width: 90vw;
+    height: 108vw;
   }
 }
 .resto--note {
@@ -358,9 +369,9 @@ footer {
   font-size: 2rem;
   margin: 0px 0px 10% 0px;
 }
-@media all and (max-width: 1024px) {
+@media all and (max-width: 470px) {
   .resto--note h2 {
-    font-size: 1.5rem;
+    font-size: 7vw;
     margin: 0;
   }
 }
@@ -382,10 +393,10 @@ footer {
   font-family: "croissant-one";
   font-size: 2rem;
 }
-@media all and (max-width: 1024px) {
+@media all and (max-width: 470px) {
   .resto--chic h2 {
-    font-size: 1.5rem;
-    margin: 40px 0px 0px 0px;
+    margin-top: 6vh;
+    font-size: 7vw;
   }
 }
 .resto--chic p {
@@ -393,13 +404,13 @@ footer {
   color: #c77412;
   font-size: 3rem;
 }
-@media all and (max-width: 1024px) {
+@media all and (max-width: 470px) {
   .resto--chic p {
     margin: 0;
   }
 }
 .resto--delice {
-  /*set properties for restaurant box Nb3- note delice papilles*/
+  /*set properties for restaurant box Nb3- delice papilles*/
   background-color: #eef0f0;
 }
 .resto--delice h2 {
@@ -409,10 +420,10 @@ footer {
   font-family: "dancing-script";
   font-size: 3rem;
 }
-@media all and (max-width: 1024px) {
+@media all and (max-width: 470px) {
   .resto--delice h2 {
-    font-size: 2.25rem;
-    margin: 40px 0px 0px 0px;
+    margin-top: 6vh;
+    font-size: 10.5vw;
   }
 }
 .resto--delice p {
@@ -420,13 +431,13 @@ footer {
   color: #108dfb;
   font-size: 3rem;
 }
-@media all and (max-width: 1024px) {
+@media all and (max-width: 470px) {
   .resto--delice p {
     margin: 0;
   }
 }
 .resto--palette {
-  /*set properties for restaurant box Nb4- note palette gout*/
+  /*set properties for restaurant box Nb4- palette gout*/
   background-color: #fdfffd;
 }
 .resto--palette h2 {
@@ -436,10 +447,10 @@ footer {
   font-family: "alegra-sans";
   font-size: 3rem;
 }
-@media all and (max-width: 1024px) {
+@media all and (max-width: 470px) {
   .resto--palette h2 {
-    font-size: 2.25rem;
-    margin: 40px 0px 0px 0px;
+    margin-top: 6vh;
+    font-size: 10.5vw;
   }
 }
 .resto--palette p {
@@ -447,7 +458,7 @@ footer {
   color: #3d9339;
   font-size: 3rem;
 }
-@media all and (max-width: 1024px) {
+@media all and (max-width: 470px) {
   .resto--palette p {
     margin: 0;
   }
@@ -477,10 +488,10 @@ footer {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  margin-bottom: 50px;
+  margin-bottom: 150px;
   border-radius: 20px;
 }
-@media all and (max-width: 1024px) {
+@media all and (max-width: 1000px) {
   .soon {
     width: 250px;
     height: 50px;
@@ -499,7 +510,7 @@ footer {
   align-items: flex-end;
   margin-left: 10px;
 }
-@media all and (max-width: 1024px) {
+@media all and (max-width: 1000px) {
   .suspension {
     width: 30px;
     height: 20px;
@@ -512,7 +523,7 @@ footer {
   width: 5px;
   height: 5px;
 }
-@media all and (max-width: 1024px) {
+@media all and (max-width: 1000px) {
   .dot {
     width: 3.75px;
     height: 3.75px;

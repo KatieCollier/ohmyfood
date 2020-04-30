@@ -92,5 +92,9 @@
 
 /*media query mixin for responsiveness*/
 @mixin small-screen{
-    @media all and (max-width: 1024px){@content};
+    @media all and (max-width: 1000px){@content};
+}
+
+@mixin very-small-screen{
+    @media all and (max-width: 470px){@content};
 }

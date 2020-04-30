@@ -3,16 +3,26 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 100%;
+    margin: auto;
 }
 
 .article-home{/*set part containing restaurant boxes so that they are 
     displayed in rows but sent back to the line if the containing part is not big enough*/
     margin: auto;
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
     margin-bottom: 30px;
+}
+
+.row{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    @include small-screen{
+        flex-direction: column;
+    }
 }
 
 .resto{/*set properties common to all restaurant boxes: size, alignement, shadow*/
@@ -24,10 +34,9 @@
     justify-content: center;
     align-items: center;
     @include shadow($shadow-size);
-    @include small-screen{
-        width: 0.7*$square-width;
-        height: 0.7*$square-height;
-        margin-bottom: 30px;
+    @include very-small-screen{
+        width: $resp-square-width;
+        height: 1.2*$resp-square-width;
     }
     &--note{/*set properties for restaurant box Nb1- note enchantee*/
         background-color: $note-bg-clr;
@@ -37,8 +46,8 @@
         h2{
             @include note-name($resto-size-home);
             margin: 0px 0px 10% 0px;
-            @include small-screen{
-                font-size: 0.75*$resto-size-home;
+            @include very-small-screen{
+                font-size: $resp-font-size;
                 margin: 0;
             }
         }
@@ -51,46 +60,46 @@
         background-color: $chic-bg-clr;
         h2{
             @include chic-name ($resto-size-home);
-            @include small-screen{
-                font-size: 0.75*$resto-size-home;
-                margin: 40px 0px 0px 0px;
+            @include very-small-screen{
+                margin-top: 6vh;
+                font-size: $resp-font-size;
             }
         }
         p{
             @include chic-menu;
-            @include small-screen{
+            @include very-small-screen{
                 margin: 0;
             }
         }
     }
-    &--delice{/*set properties for restaurant box Nb3- note delice papilles*/
+    &--delice{/*set properties for restaurant box Nb3- delice papilles*/
         background-color: $delice-bg-clr;
         h2{
             @include delice-name (1.5*$resto-size-home);
-            @include small-screen{
-                font-size: 1.125*$resto-size-home;
-                margin: 40px 0px 0px 0px;
+            @include very-small-screen{
+                margin-top: 6vh;
+                font-size: 1.5*$resp-font-size;
             }
         }
         p{
             @include del-pal-menu ($delice-txt-clr-lgt);
-            @include small-screen{
+            @include very-small-screen{
                 margin: 0;
             }
         }
     }
-    &--palette{/*set properties for restaurant box Nb4- note palette gout*/
+    &--palette{/*set properties for restaurant box Nb4- palette gout*/
         background-color: $palette-bg-clr;
         h2{
             @include palette-name (1.5*$resto-size-home);
-            @include small-screen{
-                font-size: 1.125*$resto-size-home;
-                margin: 40px 0px 0px 0px;
+            @include very-small-screen{
+                margin-top: 6vh;
+                font-size: 1.5*$resp-font-size;
             }
         }
         p{
             @include del-pal-menu ($palette-txt-clr-1);
-            @include small-screen{
+            @include very-small-screen{
                 margin: 0;
             }
         }
@@ -113,7 +122,7 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    margin-bottom: 50px;
+    margin-bottom: 150px;
     border-radius: 20px;
     @include small-screen{
         width: 250px;
