@@ -21,7 +21,7 @@
             } 
          }
          &--desert::before{/*add line under course titles ready for animation*/
-            @include underline ($pal-del-item-clr, 295px); 
+            @include underline ($pal-del-item-clr, 280px); 
             @include very-small-screen{
                 @include underline ($pal-del-item-clr, 210px);
             } 
