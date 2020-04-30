@@ -346,7 +346,7 @@ footer {
   align-items: center;
   box-shadow: 7px 7px 7px rgba(0, 0, 0, 0.1), -7px 7px 7px rgba(0, 0, 0, 0.1), -7px -7px 7px rgba(0, 0, 0, 0.1), 7px -7px 7px rgba(0, 0, 0, 0.1);
 }
-@media all and (max-width: 470px) {
+@media all and (max-width: 500px) {
   .resto {
     width: 90vw;
     height: 108vw;
@@ -369,7 +369,7 @@ footer {
   font-size: 2rem;
   margin: 0px 0px 10% 0px;
 }
-@media all and (max-width: 470px) {
+@media all and (max-width: 500px) {
   .resto--note h2 {
     font-size: 7vw;
     margin: 0;
@@ -393,7 +393,7 @@ footer {
   font-family: "croissant-one";
   font-size: 2rem;
 }
-@media all and (max-width: 470px) {
+@media all and (max-width: 500px) {
   .resto--chic h2 {
     margin-top: 6vh;
     font-size: 7vw;
@@ -404,7 +404,7 @@ footer {
   color: #c77412;
   font-size: 3rem;
 }
-@media all and (max-width: 470px) {
+@media all and (max-width: 500px) {
   .resto--chic p {
     margin: 0;
   }
@@ -420,7 +420,7 @@ footer {
   font-family: "dancing-script";
   font-size: 3rem;
 }
-@media all and (max-width: 470px) {
+@media all and (max-width: 500px) {
   .resto--delice h2 {
     margin-top: 6vh;
     font-size: 10.5vw;
@@ -431,7 +431,7 @@ footer {
   color: #108dfb;
   font-size: 3rem;
 }
-@media all and (max-width: 470px) {
+@media all and (max-width: 500px) {
   .resto--delice p {
     margin: 0;
   }
@@ -447,7 +447,7 @@ footer {
   font-family: "alegra-sans";
   font-size: 3rem;
 }
-@media all and (max-width: 470px) {
+@media all and (max-width: 500px) {
   .resto--palette h2 {
     margin-top: 6vh;
     font-size: 10.5vw;
@@ -458,7 +458,7 @@ footer {
   color: #3d9339;
   font-size: 3rem;
 }
-@media all and (max-width: 470px) {
+@media all and (max-width: 500px) {
   .resto--palette p {
     margin: 0;
   }
@@ -543,6 +543,12 @@ footer {
 .main-menu {
   box-shadow: 7px 7px 7px rgba(0, 0, 0, 0.1), -7px 7px 7px rgba(0, 0, 0, 0.1), -7px -7px 7px rgba(0, 0, 0, 0.1), 7px -7px 7px rgba(0, 0, 0, 0.1);
 }
+@media all and (max-width: 1000px) {
+  .main-menu {
+    width: 90%;
+    margin-bottom: 100px;
+  }
+}
 .main-menu article {
   display: flex;
   flex-direction: column;
@@ -557,12 +563,17 @@ footer {
 }
 .main-menu p {
   font-size: 1.5rem;
+  padding-right: 5px;
+}
+@media all and (max-width: 1000px) {
+  .main-menu p {
+    font-size: 1.05rem;
+  }
 }
 
 .resto-header {
   text-align: center;
   padding-top: 2%;
-  font-size: 2rem;
 }
 
 .course-name {
@@ -573,8 +584,13 @@ footer {
 }
 
 img {
-  height: 15px;
+  height: 14px;
   width: fit-content;
+}
+@media all and (max-width: 1000px) {
+  img {
+    display: none;
+  }
 }
 
 h2 {
@@ -597,16 +613,33 @@ h2 {
   font-size: 2rem;
   position: relative;
 }
+@media all and (max-width: 500px) {
+  .main--note .h2 {
+    font-size: 1.4rem;
+  }
+}
 .main--note .h2--starters::before {
   /*add line under course titles ready for animation*/
   content: "";
   border-bottom: 5px solid #3c1218;
   position: absolute;
   bottom: 0;
-  width: 150px;
+  width: 125px;
   transform: scaleX(0);
   transform-origin: left;
   transition: transform 400ms;
+}
+@media all and (max-width: 500px) {
+  .main--note .h2--starters::before {
+    content: "";
+    border-bottom: 5px solid #3c1218;
+    position: absolute;
+    bottom: 0;
+    width: 85px;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 400ms;
+  }
 }
 .main--note .h2--courses::before {
   /*add line under course titles ready for animation*/
@@ -614,10 +647,22 @@ h2 {
   border-bottom: 5px solid #3c1218;
   position: absolute;
   bottom: 0;
-  width: 275px;
+  width: 220px;
   transform: scaleX(0);
   transform-origin: left;
   transition: transform 400ms;
+}
+@media all and (max-width: 500px) {
+  .main--note .h2--courses::before {
+    content: "";
+    border-bottom: 5px solid #3c1218;
+    position: absolute;
+    bottom: 0;
+    width: 155px;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 400ms;
+  }
 }
 .main--note .h2--desert::before {
   /*add line under course titles ready for animation*/
@@ -625,10 +670,22 @@ h2 {
   border-bottom: 5px solid #3c1218;
   position: absolute;
   bottom: 0;
-  width: 340px;
+  width: 280px;
   transform: scaleX(0);
   transform-origin: left;
   transition: transform 400ms;
+}
+@media all and (max-width: 500px) {
+  .main--note .h2--desert::before {
+    content: "";
+    border-bottom: 5px solid #3c1218;
+    position: absolute;
+    bottom: 0;
+    width: 195px;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 400ms;
+  }
 }
 .main--note .h2:hover::before {
   /*add hover animations*/
@@ -657,11 +714,21 @@ h2 {
   font-size: 3rem;
   margin: 0%;
 }
+@media all and (max-width: 500px) {
+  .resto-header--note h1 {
+    font-size: 1.8rem;
+  }
+}
 
 .resto-footer p {
   font-family: "merienda";
   color: #3c1218;
   font-size: 2.5rem;
+}
+@media all and (max-width: 500px) {
+  .resto-footer p {
+    font-size: 1.2rem;
+  }
 }
 .resto-footer strong {
   font-family: "noto-sans";
@@ -670,70 +737,108 @@ h2 {
   -webkit-text-fill-color: transparent;
   font-size: 4rem;
 }
+@media all and (max-width: 500px) {
+  .resto-footer strong {
+    font-size: 2rem;
+  }
+}
 
 .main--chic {
   background-color: #fff5fe;
-  font-family: "serif-beta";
-}
-.main--chic h2 {
-  font-size: 2rem;
-  position: relative;
 }
 .main--chic .starters {
   color: #c67412;
 }
-.main--chic .starters h2::before {
+.main--chic .main-courses {
+  color: #a56799;
+}
+.main--chic .desert {
+  color: #6e4ccc;
+}
+.main--chic .h2 {
+  font-family: "serif-beta";
+  font-size: 1.9rem;
+  position: relative;
+}
+@media all and (max-width: 500px) {
+  .main--chic .h2 {
+    font-size: 1.4rem;
+  }
+}
+.main--chic .h2--starters::before {
   /*add line under course titles ready for animation*/
   content: "";
   border-bottom: 5px solid #c67412;
   position: absolute;
   bottom: 0;
-  width: 545px;
+  width: 375px;
   transform: scaleX(0);
   transform-origin: left;
   transition: transform 400ms;
 }
-.main--chic .starters h2:hover::before {
-  /*add hover animations*/
-  transform: scaleX(0.9);
+@media all and (max-width: 500px) {
+  .main--chic .h2--starters::before {
+    content: "";
+    border-bottom: 5px solid #c67412;
+    position: absolute;
+    bottom: 0;
+    width: 275px;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 400ms;
+  }
 }
-.main--chic .main-courses {
-  color: #a56799;
-}
-.main--chic .main-courses h2::before {
+.main--chic .h2--courses::before {
   /*add line under course titles ready for animation*/
   content: "";
   border-bottom: 5px solid #a56799;
   position: absolute;
   bottom: 0;
-  width: 530px;
+  width: 275px;
   transform: scaleX(0);
   transform-origin: left;
   transition: transform 400ms;
 }
-.main--chic .main-courses h2:hover::before {
-  /*add hover animations*/
-  transform: scaleX(0.68);
+@media all and (max-width: 500px) {
+  .main--chic .h2--courses::before {
+    content: "";
+    border-bottom: 5px solid #a56799;
+    position: absolute;
+    bottom: 0;
+    width: 200px;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 400ms;
+  }
 }
-.main--chic .desert {
-  color: #6e4ccc;
-}
-.main--chic .desert h2::before {
+.main--chic .h2--desert::before {
   /*add line under course titles ready for animation*/
   content: "";
   border-bottom: 5px solid #6e4ccc;
   position: absolute;
   bottom: 0;
-  width: 550px;
+  width: 335px;
   transform: scaleX(0);
   transform-origin: left;
   transition: transform 400ms;
 }
-.main--chic .desert h2:hover::before {
-  /*add hover animations*/
-  transform: scaleX(0.8);
+@media all and (max-width: 500px) {
+  .main--chic .h2--desert::before {
+    content: "";
+    border-bottom: 5px solid #6e4ccc;
+    position: absolute;
+    bottom: 0;
+    width: 245px;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 400ms;
+  }
 }
-.main--chic .price {
+.main--chic .h2:hover::before {
+  transform: scale(1);
+}
+
+.price {
   font-weight: bold;
 }
 
@@ -743,6 +848,11 @@ h2 {
   -webkit-text-fill-color: transparent;
   font-family: "croissant-one";
   font-size: 3rem;
+}
+@media all and (max-width: 500px) {
+  .resto-header--chic h1 {
+    font-size: 1.8rem;
+  }
 }
 
 .main--delice {

@@ -1,5 +1,9 @@
 .main-menu{
     @include shadow($shadow-size);
+    @include small-screen{
+        width: 90%;
+        margin-bottom: 100px;
+    }
     article{
         display: flex;
         flex-direction: column;
@@ -14,13 +18,16 @@
     }
     p{
         font-size: $items-font-size;
+        padding-right: 5px;
+        @include small-screen{
+            font-size: 0.7*$items-font-size;
+        }
     }
 }
 
 .resto-header{
     text-align: center;
     padding-top: 2%;
-    font-size: 2rem;
 }
 
 .course-name{
@@ -31,8 +38,11 @@
 }
 
 img{
-    height: 15px;
+    height: 14px;
     width: fit-content;
+    @include small-screen{
+        display: none;
+    }
 }
 
 h2{

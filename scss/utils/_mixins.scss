@@ -96,5 +96,5 @@
 }
 
 @mixin very-small-screen{
-    @media all and (max-width: 470px){@content};
+    @media all and (max-width: 500px){@content};
 }

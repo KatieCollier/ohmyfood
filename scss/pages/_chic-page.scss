@@ -1,50 +1,54 @@
 .main--chic{
     background-color: $chic-bg-clr;
-    font-family: $chic-menu-font;
-    h2{
-        font-size: $courses-font-size;
-        position: relative;
-    }
     .starters{
         color: $chic-items-starters;
-        h2{
-            &::before{/*add line under course titles ready for animation*/
-                @include underline ($chic-items-starters, 545px); 
-             }
-            &:hover::before{/*add hover animations*/
-                transform:scaleX(0.9);
-            }  
-        }
     }
     .main-courses{
         color: $chic-items-course;
-        h2{
-            &::before{/*add line under course titles ready for animation*/
-                @include underline ($chic-items-course, 530px); 
-             }
-            &:hover::before{/*add hover animations*/
-                transform:scaleX(0.68);
-            }  
-        }
     }
     .desert{
         color: $chic-items-desert;
-        h2{
-            &::before{/*add line under course titles ready for animation*/
-                @include underline ($chic-items-desert, 550px); 
-             }
-            &:hover::before{/*add hover animations*/
-                transform:scaleX(0.8);
-            }  
+    }
+    .h2{
+        font-family: $chic-menu-font;
+        font-size: 0.95*$courses-font-size;
+        position: relative;
+        @include very-small-screen{
+        font-size: 0.7*$courses-font-size;
+        }
+        &--starters::before{/*add line under course titles ready for animation*/
+                @include underline ($chic-items-starters, 375px); 
+                @include very-small-screen{
+                    @include underline ($chic-items-starters, 275px);
+                }
+            }
+        &--courses::before{/*add line under course titles ready for animation*/
+                @include underline ($chic-items-course, 275px);
+                @include very-small-screen{
+                    @include underline ($chic-items-course, 200px);
+                } 
+            }
+        &--desert::before{/*add line under course titles ready for animation*/
+                @include underline ($chic-items-desert, 335px);
+                @include very-small-screen{
+                    @include underline ($chic-items-desert, 245px);
+                } 
+            } 
+        &:hover::before{
+            transform: scale(1);
         }
     }
+}
+  
     .price{
         font-weight: bold;
     }
-}
 
 .resto-header--chic {
     h1{
         @include chic-name($resto-size-menu);
+        @include very-small-screen{
+            font-size: 0.6*$resto-size-menu;
+        }
     }
 }
