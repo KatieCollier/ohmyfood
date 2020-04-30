@@ -5,14 +5,26 @@
     .h2{/*set properties for course titles*/
         font-size: $courses-font-size;
         position: relative;
+        @include very-small-screen{
+            font-size: 0.7*$courses-font-size;
+        }
         &--starters::before{/*add line under course titles ready for animation*/
-           @include underline (black, 160px); 
+           @include underline ($pal-del-item-clr, 130px); 
+           @include very-small-screen{
+            @include underline ($pal-del-item-clr, 90px);
+        }
         }
         &--courses::before{/*add line under course titles ready for animation*/
-            @include underline (black, 325px); 
+            @include underline ($pal-del-item-clr, 260px); 
+            @include very-small-screen{
+                @include underline ($pal-del-item-clr, 180px);
+            }
          }
          &--desert::before{/*add line under course titles ready for animation*/
-            @include underline (black, 360px); 
+            @include underline ($pal-del-item-clr, 290px); 
+            @include very-small-screen{
+                @include underline ($pal-del-item-clr, 200px);
+            }
          }
         &:hover::before{
             transform:scaleX(1);
@@ -26,6 +38,9 @@
 .resto-header--palette {/*set properties and font for the restaurant name*/
     h1{
         @include palette-name(1.5*$resto-size-menu);
+        @include very-small-screen{
+            font-size: 0.9*$resto-size-menu;
+        }
     }
 }
 

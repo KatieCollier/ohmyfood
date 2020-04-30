@@ -5,14 +5,26 @@
     .h2{
         font-size: $courses-font-size;
         position: relative;
+        @include very-small-screen{
+            font-size: 0.7*$courses-font-size;
+        }
         &--starters::before{/*add line under course titles ready for animation*/
-           @include underline (black, 400px); 
+           @include underline ($pal-del-item-clr, 320px); 
+           @include very-small-screen{
+            @include underline ($pal-del-item-clr, 230px);
+        }
         }
         &--courses::before{/*add line under course titles ready for animation*/
-            @include underline (black, 370px); 
+            @include underline ($pal-del-item-clr, 300px);
+            @include very-small-screen{
+                @include underline ($pal-del-item-clr, 210px);
+            } 
          }
          &--desert::before{/*add line under course titles ready for animation*/
-            @include underline (black, 360px); 
+            @include underline ($pal-del-item-clr, 295px); 
+            @include very-small-screen{
+                @include underline ($pal-del-item-clr, 210px);
+            } 
          }
         &:hover::before{/*add hover animations*/
             transform:scaleX(1);
@@ -24,10 +36,11 @@
     }
 }
 
-
-
 .resto-header--delice {
     h1{
         @include delice-name(1.5*$resto-size-menu);
+        @include very-small-screen{
+            font-size: 0.9*$resto-size-menu;
+        }
     }
 }

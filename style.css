@@ -864,16 +864,33 @@ h2 {
   font-size: 2rem;
   position: relative;
 }
+@media all and (max-width: 500px) {
+  .main--delice .h2 {
+    font-size: 1.4rem;
+  }
+}
 .main--delice .h2--starters::before {
   /*add line under course titles ready for animation*/
   content: "";
   border-bottom: 5px solid black;
   position: absolute;
   bottom: 0;
-  width: 400px;
+  width: 320px;
   transform: scaleX(0);
   transform-origin: left;
   transition: transform 400ms;
+}
+@media all and (max-width: 500px) {
+  .main--delice .h2--starters::before {
+    content: "";
+    border-bottom: 5px solid black;
+    position: absolute;
+    bottom: 0;
+    width: 230px;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 400ms;
+  }
 }
 .main--delice .h2--courses::before {
   /*add line under course titles ready for animation*/
@@ -881,10 +898,22 @@ h2 {
   border-bottom: 5px solid black;
   position: absolute;
   bottom: 0;
-  width: 370px;
+  width: 300px;
   transform: scaleX(0);
   transform-origin: left;
   transition: transform 400ms;
+}
+@media all and (max-width: 500px) {
+  .main--delice .h2--courses::before {
+    content: "";
+    border-bottom: 5px solid black;
+    position: absolute;
+    bottom: 0;
+    width: 210px;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 400ms;
+  }
 }
 .main--delice .h2--desert::before {
   /*add line under course titles ready for animation*/
@@ -892,10 +921,22 @@ h2 {
   border-bottom: 5px solid black;
   position: absolute;
   bottom: 0;
-  width: 360px;
+  width: 295px;
   transform: scaleX(0);
   transform-origin: left;
   transition: transform 400ms;
+}
+@media all and (max-width: 500px) {
+  .main--delice .h2--desert::before {
+    content: "";
+    border-bottom: 5px solid black;
+    position: absolute;
+    bottom: 0;
+    width: 210px;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 400ms;
+  }
 }
 .main--delice .h2:hover::before {
   /*add hover animations*/
@@ -912,6 +953,11 @@ h2 {
   font-family: "dancing-script";
   font-size: 4.5rem;
 }
+@media all and (max-width: 500px) {
+  .resto-header--delice h1 {
+    font-size: 2.7rem;
+  }
+}
 
 .main--palette {
   /*set main properties for page excluing header and footer*/
@@ -924,16 +970,33 @@ h2 {
   font-size: 2rem;
   position: relative;
 }
+@media all and (max-width: 500px) {
+  .main--palette .h2 {
+    font-size: 1.4rem;
+  }
+}
 .main--palette .h2--starters::before {
   /*add line under course titles ready for animation*/
   content: "";
   border-bottom: 5px solid black;
   position: absolute;
   bottom: 0;
-  width: 160px;
+  width: 130px;
   transform: scaleX(0);
   transform-origin: left;
   transition: transform 400ms;
+}
+@media all and (max-width: 500px) {
+  .main--palette .h2--starters::before {
+    content: "";
+    border-bottom: 5px solid black;
+    position: absolute;
+    bottom: 0;
+    width: 90px;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 400ms;
+  }
 }
 .main--palette .h2--courses::before {
   /*add line under course titles ready for animation*/
@@ -941,10 +1004,22 @@ h2 {
   border-bottom: 5px solid black;
   position: absolute;
   bottom: 0;
-  width: 325px;
+  width: 260px;
   transform: scaleX(0);
   transform-origin: left;
   transition: transform 400ms;
+}
+@media all and (max-width: 500px) {
+  .main--palette .h2--courses::before {
+    content: "";
+    border-bottom: 5px solid black;
+    position: absolute;
+    bottom: 0;
+    width: 180px;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 400ms;
+  }
 }
 .main--palette .h2--desert::before {
   /*add line under course titles ready for animation*/
@@ -952,10 +1027,22 @@ h2 {
   border-bottom: 5px solid black;
   position: absolute;
   bottom: 0;
-  width: 360px;
+  width: 290px;
   transform: scaleX(0);
   transform-origin: left;
   transition: transform 400ms;
+}
+@media all and (max-width: 500px) {
+  .main--palette .h2--desert::before {
+    content: "";
+    border-bottom: 5px solid black;
+    position: absolute;
+    bottom: 0;
+    width: 200px;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 400ms;
+  }
 }
 .main--palette .h2:hover::before {
   transform: scaleX(1);
@@ -974,6 +1061,11 @@ h2 {
   -webkit-text-fill-color: transparent;
   font-family: "alegra-sans";
   font-size: 4.5rem;
+}
+@media all and (max-width: 500px) {
+  .resto-header--palette h1 {
+    font-size: 2.7rem;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
