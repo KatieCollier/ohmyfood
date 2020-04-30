@@ -400,7 +400,7 @@ footer {
 }
 .resto--delice {
   /*set properties for restaurant box Nb3- note delice papilles*/
-  background-color: #f9f9f9;
+  background-color: #eef0f0;
 }
 .resto--delice h2 {
   background: linear-gradient(to right, #0023db 0%, 30%, #108dfb 100%);
@@ -554,8 +554,21 @@ footer {
   font-size: 2rem;
 }
 
+.course-name {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+img {
+  height: 15px;
+  width: fit-content;
+}
+
 h2 {
   text-align: center;
+  margin: 0;
 }
 
 .resto-footer {
@@ -569,8 +582,8 @@ h2 {
 .main--note .h2 {
   font-family: "merienda";
   color: #3c1218;
-  font-size: 2.5rem;
-  font-size: 2.5rem;
+  font-size: 2rem;
+  font-size: 2rem;
   position: relative;
 }
 .main--note .h2--starters::before {
@@ -630,7 +643,7 @@ h2 {
 .resto-header--note h1 {
   font-family: "merienda";
   color: #3c1218;
-  font-size: 3.5rem;
+  font-size: 3rem;
   margin: 0%;
 }
 
@@ -652,7 +665,7 @@ h2 {
   font-family: "serif-beta";
 }
 .main--chic h2 {
-  font-size: 2.5rem;
+  font-size: 2rem;
   position: relative;
 }
 .main--chic .starters {
@@ -718,16 +731,16 @@ h2 {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-family: "croissant-one";
-  font-size: 3.5rem;
+  font-size: 3rem;
 }
 
 .main--delice {
-  background-color: #f9f9f9;
+  background-color: #eef0f0;
   font-family: "andika-italic";
   font-size: 1.5rem;
 }
 .main--delice .h2 {
-  font-size: 2.5rem;
+  font-size: 2rem;
   position: relative;
 }
 .main--delice .h2--starters::before {
@@ -776,7 +789,7 @@ h2 {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-family: "dancing-script";
-  font-size: 5.25rem;
+  font-size: 4.5rem;
 }
 
 .main--palette {
@@ -787,7 +800,7 @@ h2 {
 }
 .main--palette .h2 {
   /*set properties for course titles*/
-  font-size: 2.5rem;
+  font-size: 2rem;
   position: relative;
 }
 .main--palette .h2--starters::before {
@@ -839,7 +852,7 @@ h2 {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-family: "alegra-sans";
-  font-size: 5.25rem;
+  font-size: 4.5rem;
 }
 
 /*# sourceMappingURL=style.css.map */

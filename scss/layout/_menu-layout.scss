@@ -23,8 +23,21 @@
     font-size: 2rem;
 }
 
+.course-name{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+img{
+    height: 15px;
+    width: fit-content;
+}
+
 h2{
     text-align: center;
+    margin: 0;
 }
 
 .resto-footer{
