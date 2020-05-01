@@ -6,7 +6,7 @@
     a{
     @include omf-txt-site ($footer-font-size);
     @include small-screen{
-        font-size: 1rem;
+        font-size: 0.7*$footer-font-size;
     }
     }
     &:hover{

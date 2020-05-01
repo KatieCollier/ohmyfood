@@ -245,7 +245,7 @@ body {
 }
 @media all and (max-width: 1000px) {
   .btn a {
-    font-size: 1rem;
+    font-size: 0.98rem;
   }
 }
 .btn:hover {
@@ -314,7 +314,7 @@ footer {
   margin: auto;
 }
 
-.article-home {
+.boxes {
   /*set part containing restaurant boxes so that they are 
   displayed in rows but sent back to the line if the containing part is not big enough*/
   margin: auto;
@@ -555,7 +555,7 @@ footer {
   justify-content: space-around;
   padding: 5%;
 }
-.main-menu section {
+.main-menu .meal {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
