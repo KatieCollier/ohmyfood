@@ -1,5 +1,7 @@
+/*LAYOUT specific to the CHIC A LA FRANCAISE page */
 .main--chic{
     background-color: $chic-bg-clr;
+    /*Sets the different colors for the different courses present on this page*/
     .starters{
         color: $chic-items-starters;
     }
@@ -9,42 +11,41 @@
     .desert{
         color: $chic-items-desert;
     }
-    .h2{
+    /*settings for the course names... */
+    .h2{/*... general to all courses*/
         font-family: $chic-menu-font;
         font-size: 0.95*$courses-font-size;
         position: relative;
         @include very-small-screen{
         font-size: 0.7*$courses-font-size;
         }
-        &--starters::before{/*add line under course titles ready for animation*/
+        /*...specific to each course type: starters, main course, desert*/
+        &--starters::before{/*add line under course titles ready for animation- 
+            one per course as all different lengths*/
                 @include underline ($chic-items-starters, 375px); 
-                @include very-small-screen{
+                @include very-small-screen{/*reduce line length to match smaller writing used for very small screens*/
                     @include underline ($chic-items-starters, 275px);
                 }
             }
-        &--courses::before{/*add line under course titles ready for animation*/
+        &--courses::before{
                 @include underline ($chic-items-course, 275px);
                 @include very-small-screen{
                     @include underline ($chic-items-course, 200px);
                 } 
             }
-        &--desert::before{/*add line under course titles ready for animation*/
+        &--desert::before{
                 @include underline ($chic-items-desert, 335px);
                 @include very-small-screen{
                     @include underline ($chic-items-desert, 245px);
                 } 
             } 
-        &:hover::before{
+        &:hover::before{/*add hover animations*/
             transform: scale(1);
         }
     }
 }
-  
-    .price{
-        font-weight: bold;
-    }
-
-.resto-header--chic {
+    
+.resto-header--chic {/*settings of restaurant header specific to the chic page*/
     h1{
         @include chic-name($resto-size-menu);
         @include very-small-screen{

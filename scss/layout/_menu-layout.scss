@@ -1,16 +1,18 @@
-.main-menu{
+/*LAYOUT for MENU PAGES*/
+.main-menu{/*settings that apply to all menu pages - 
+    box shadow, general layout, items font size*/
     @include shadow($shadow-size);
     @include small-screen{
         width: 90%;
         margin-bottom: 100px;
     }
-    article{
+    article{/*display starters, main course and deserts one above the other*/
         display: flex;
         flex-direction: column;
         justify-content: space-around;
         padding: 5%;
     }
-    .meal{
+    .meal{/*display the meal item next to its price*/
         display: flex;
         flex-direction: row;
         justify-content: space-between;
@@ -23,37 +25,33 @@
             font-size: 0.7*$items-font-size;
         }
     }
+    .price{/*set prices in bold for all menu pages*/
+        font-weight: bold;
+    }
 }
 
-.resto-header{
+.resto-header{/*settings for the restaurant name*/
     text-align: center;
     padding-top: 2%;
 }
 
-.course-name{
+.course-name{/*settings for course names*/
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
     h2{
-        white-space: nowrap;
+        text-align: center;
+        margin: 0;
+        white-space: nowrap;/*stop course titles being split 
+        into several lines when screen gets smaller*/
     }
 }
 
-img{
+img{/*settings for decorative lines next to course names*/
     height: 14px;
     width: 200px;
     @include small-screen{
         display: none;
     }
-}
-
-h2{
-    text-align: center;
-    margin: 0;
-}
-
-.resto-footer{
-    text-align: center;
-    padding-bottom: 10%;
 }

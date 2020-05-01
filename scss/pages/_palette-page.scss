@@ -1,41 +1,41 @@
-.main--palette{/*set main properties for page excluing header and footer*/
+
+/*LAYOUT specific to the PALETTE DU GOUT page*/
+.main--palette{
     background-color: $palette-bg-clr;
     font-family: $del-pal-item-font;
     font-size: $items-font-size;
-    .h2{/*set properties for course titles*/
+    .h2{/*settings for the course names*/
         font-size: $courses-font-size;
         position: relative;
         @include very-small-screen{
             font-size: 0.7*$courses-font-size;
         }
-        &--starters::before{/*add line under course titles ready for animation*/
+        &--starters::before{/*add line under course titles ready for animation- 
+            one per course as all different lengths*/
            @include underline ($pal-del-item-clr, 130px); 
-           @include very-small-screen{
+           @include very-small-screen{/*reduce line length to match smaller writing used for very small screens*/
             @include underline ($pal-del-item-clr, 90px);
         }
         }
-        &--courses::before{/*add line under course titles ready for animation*/
+        &--courses::before{
             @include underline ($pal-del-item-clr, 260px); 
             @include very-small-screen{
                 @include underline ($pal-del-item-clr, 180px);
             }
          }
-         &--desert::before{/*add line under course titles ready for animation*/
+         &--desert::before{
             @include underline ($pal-del-item-clr, 290px); 
             @include very-small-screen{
                 @include underline ($pal-del-item-clr, 200px);
             }
          }
-        &:hover::before{
+        &:hover::before{/*add hover animations*/
             transform:scaleX(1);
         }
     }
-    .price{/*make prices on list bold*/
-        font-weight: bold;
-    }
 }
 
-.resto-header--palette {/*set properties and font for the restaurant name*/
+.resto-header--palette {/*settings of restaurant header specific to the palette page*/
     h1{
         @include palette-name(1.5*$resto-size-menu);
         @include very-small-screen{

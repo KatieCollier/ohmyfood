@@ -1,5 +1,6 @@
+/*LAYOUT for HOME PAGE */
 .main-home{/* set the main part of the home page so that restaurant boxes 
-    are above soon button and all is centered*/
+    are above the soon button and all is centered*/
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -7,8 +8,7 @@
     margin: auto;
 }
 
-.boxes{/*set part containing restaurant boxes so that they are 
-    displayed in rows but sent back to the line if the containing part is not big enough*/
+.boxes{/* put the two rows of boxes one on top of the other*/
     margin: auto;
     display: flex;
     flex-direction: column;
@@ -16,10 +16,11 @@
     margin-bottom: 30px;
 }
 
-.row{
+.row{ /* put boxes in each row side by side... */
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    /*... unless screen is too small: then put them one on top of the other*/
     @include small-screen{
         flex-direction: column;
     }
@@ -38,7 +39,7 @@
         width: $resp-square-width;
         height: 1.2*$resp-square-width;
     }
-    &--note{/*set properties for restaurant box Nb1- note enchantee*/
+    &--note{/*set specific properties for restaurant box Nb1- note enchantee*/
         background-color: $note-bg-clr;
         strong{
             @include music-note ($music-size-home);
@@ -56,7 +57,7 @@
             margin: 0px;
         }
     }
-    &--chic{/*set properties for restaurant box Nb2- chic francaise*/
+    &--chic{/*set specific properties for restaurant box Nb2- chic francaise*/
         background-color: $chic-bg-clr;
         h2{
             @include chic-name ($resto-size-home);
@@ -72,7 +73,7 @@
             }
         }
     }
-    &--delice{/*set properties for restaurant box Nb3- delice papilles*/
+    &--delice{/*set specific properties for restaurant box Nb3- delice papilles*/
         background-color: $delice-bg-clr;
         h2{
             @include delice-name (1.5*$resto-size-home);
@@ -88,7 +89,7 @@
             }
         }
     }
-    &--palette{/*set properties for restaurant box Nb4- palette gout*/
+    &--palette{/*set specific properties for restaurant box Nb4- palette gout*/
         background-color: $palette-bg-clr;
         h2{
             @include palette-name (1.5*$resto-size-home);
@@ -98,7 +99,7 @@
             }
         }
         p{
-            @include del-pal-menu ($palette-txt-clr-1);
+            @include del-pal-menu ($palette-txt-clr-drk);
             @include very-small-screen{
                 margin: 0;
             }
@@ -114,7 +115,7 @@
     }
 }
 
-.soon{/*set properties for soon button - doesn't do anything*/
+.soon{/*set properties for soon button - NB: doesn't do anything*/
     @include omf-txt-site ($soon-font-size);
     width: 400px;
     height: 70px;
@@ -154,7 +155,8 @@
         width: 0.75*$dot-size;
         height: 0.75*$dot-size;
     }
-    &--1{/*add animation to suspension marks*/
+    &--1{/*add animation to suspension marks - different animation for each 
+        dot allows them to remain synchronised on a infinite loop*/
         animation: appear1 $dots-dur $dots-delay both infinite;
     }
     &--2{

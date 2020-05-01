@@ -1,17 +1,19 @@
-main{
+/*LAYOUT concerning ALL PAGES*/
+main{/*set size for the main part of the page - excluding header and footer*/
     width: 80%;
     margin: 5% 10% 7% 10%;
-    @include small-screen{
+    @include small-screen{/*adjust for smaller screens*/
         width: 100%;
         margin:auto;
     }
 }
 
-a{
+a{/*make sure that all links are not underlined - all other link properties 
+    set individually as they (nearly) all have different font, colors and sizes*/
     text-decoration: none;
 }
 
-header{
+header{/* settings for OMF header visible on all pages*/
         height: 100px;
         background-color: $main-bg-color;
         display: flex;
@@ -24,17 +26,17 @@ header{
         text-align: center;
         margin-bottom: 50px;     
     a{
-        text-decoration: none;
-        color: $main-txt-color;
+        color: $main-txt-color; /*otherwise link in blue*/
     }
     @include small-screen{
         font-size: 1.5rem;
-        letter-spacing: -4px;
+        letter-spacing: -3px;/*necessary to stop all letters fusing 
+        together with the smaller font*/
     }
 }
 
-footer{
-    position: fixed;
+footer{/*settings for OMF footer visible on all pages*/
+    position: fixed;/* stays at bottom of page even when scrolling*/
     bottom: 0;
     width: 100%;
     max-width: 1200px;
@@ -44,4 +46,21 @@ footer{
     justify-content: space-between;
     align-items: center;
     background-color: $main-bg-color;
+}
+
+.btn{/*settings for to buttom on footer - legal and contact*/
+    padding: 2rem;
+    @include small-screen{
+        padding:10px;
+    }
+    a{
+    @include omf-txt-site ($footer-font-size);
+    @include small-screen{
+        font-size: 0.7*$footer-font-size;
+    }
+    }
+    &:hover{
+        animation: wiggle 200ms ease-in-out 3;/*add animation*/
+    }
+    
 }

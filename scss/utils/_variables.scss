@@ -1,3 +1,5 @@
+/*VARIABLES*/
+
 /* FONTS */
 /* Font for omf logo - e.g. header */
 @font-face {
@@ -27,7 +29,7 @@
 
 }
 
-/*Note font*/
+/*Note restaurant name font*/
 @font-face {
     font-family: 'merienda';
         src: url('fonts/merienda/Merienda-Bold.ttf') format('truetype');
@@ -35,7 +37,7 @@
         font-style: normal;
     }
 
-/*Note menu font*/
+/*Note "menu" font*/
 @font-face {
     font-family: 'komika_textregular';
     src: url('fonts/komikatext_regular_macroman/KOMTXT__-webfont.eot');
@@ -44,51 +46,6 @@
          url('fonts/komikatext_regular_macroman/KOMTXT__-webfont.woff') format('woff'),
          url('fonts/komikatext_regular_macroman/KOMTXT__-webfont.ttf') format('truetype'),
          url('fonts/komikatext_regular_macroman/KOMTXT__-webfont.svg#komika_textregular') format('svg');
-    font-weight: normal;
-    font-style: normal;
-}
-
-/* chic font */
-@font-face {
-font-family: 'croissant-one';
-    src: url('fonts/croissant-one/CroissantOne-Regular.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
-
-/* chic menu font*/
-@font-face {
-    font-family: 'serif-beta';
-        src: url('fonts/serif12-beta/Serif12Beta-Bold.otf');
-        font-weight: normal;
-        font-style: normal;
-    }
-
-/* delice font*/
-@font-face {
-    font-family: 'dancing-script';
-        src: url('fonts/dancing-script-ot/dancing-script-ot.otf');
-        font-weight: normal;
-        font-style: normal;
-    }
-
-/* palette font*/
-@font-face {
-    font-family: 'alegra-sans';
-        src: url('fonts/alegreya-sans/AlegreyaSans-Italic.otf');
-        font-weight: normal;
-        font-style: normal;
-    }
-
-/*delice and palette menu*/
-@font-face {
-    font-family: 'montezregular';
-    src: url('fonts/montez_regular_macroman/Montez-Regular-webfont.eot');
-    src: url('fonts/montez_regular_macroman/Montez-Regular-webfont.eot?#iefix') format('embedded-opentype'),
-         url('fonts/montez_regular_macroman/Montez-Regular-webfont.woff2') format('woff2'),
-         url('fonts/montez_regular_macroman/Montez-Regular-webfont.woff') format('woff'),
-         url('fonts/montez_regular_macroman/Montez-Regular-webfont.ttf') format('truetype'),
-         url('fonts/montez_regular_macroman/Montez-Regular-webfont.svg#montezregular') format('svg');
     font-weight: normal;
     font-style: normal;
 }
@@ -114,7 +71,52 @@ font-family: 'croissant-one';
     font-style: normal;
 }
 
-/*delice items font*/
+/* chic restaurant name font */
+@font-face {
+font-family: 'croissant-one';
+    src: url('fonts/croissant-one/CroissantOne-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* chic "menu" font*/
+@font-face {
+    font-family: 'serif-beta';
+        src: url('fonts/serif12-beta/Serif12Beta-Bold.otf');
+        font-weight: normal;
+        font-style: normal;
+    }
+
+/* delice restaurant name font*/
+@font-face {
+    font-family: 'dancing-script';
+        src: url('fonts/dancing-script-ot/dancing-script-ot.otf');
+        font-weight: normal;
+        font-style: normal;
+    }
+
+/* palette restaurant name font*/
+@font-face {
+    font-family: 'alegra-sans';
+        src: url('fonts/alegreya-sans/AlegreyaSans-Italic.otf');
+        font-weight: normal;
+        font-style: normal;
+    }
+
+/*delice and palette "menu" font*/
+@font-face {
+    font-family: 'montezregular';
+    src: url('fonts/montez_regular_macroman/Montez-Regular-webfont.eot');
+    src: url('fonts/montez_regular_macroman/Montez-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/montez_regular_macroman/Montez-Regular-webfont.woff2') format('woff2'),
+         url('fonts/montez_regular_macroman/Montez-Regular-webfont.woff') format('woff'),
+         url('fonts/montez_regular_macroman/Montez-Regular-webfont.ttf') format('truetype'),
+         url('fonts/montez_regular_macroman/Montez-Regular-webfont.svg#montezregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/*delice and palette items font*/
 @font-face {
     font-family: 'andika-italic';
         src: url('fonts/andika-basic/AndikaNewBasic-I.ttf') format('truetype');
@@ -166,20 +168,21 @@ $chic-items-desert: #6e4ccc;/*text color for chic francaise deserts*/
 $delice-txt-clr-drk: #0023db;/*darkest color of delice papille name*/
 $delice-txt-clr-lgt: #108dfb;/*lightest color of delice papille name*/
 $delice-bg-clr: #eef0f0;/*background color for delice papille*/
-$palette-txt-clr-1: #3d9339;
-$palette-txt-clr-2: #bfff7e;
-$palette-bg-clr: #fdfffd;
-$pal-del-item-clr: black;
+$palette-txt-clr-drk: #3d9339;/*darkest color of palette gout name*/
+$palette-txt-clr-lgt: #bfff7e;/*lightest color of palette gout name*/
+$palette-bg-clr: #fdfffd;/*background color for palette gout*/
+$pal-del-item-clr: black;/*text color for delice and palette menu items*/
 
 
-/*shadows home page*/
-$shadow-opacity: 0.1;
 
-/* ELEMENT SIZES home page*/
+
+/* ELEMENT SIZES */
 /* sizes for the restaurant squares on the home page*/
 $square-width: 450px;
 $square-height: 570px;
-$resp-square-width: 90vw;
+$resp-square-width: 90vw; /*for very small screens*/
+/*shadows*/
+$shadow-opacity: 0.1;
 $shadow-size: 7px;
 
 /*ANIMATIONS*/

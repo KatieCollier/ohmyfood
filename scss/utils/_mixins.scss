@@ -1,4 +1,5 @@
-/* mixin for format of omf sections, excluding header*/
+/*MIXINS to be reused throughout the website*/
+/* mixin for format of omf sections- excluding header*/
 @mixin omf-txt-site ($font-size) {
     background-color: $main-bg-color;
     color: $main-txt-color;
@@ -16,21 +17,21 @@
                 $shadow-size -1*$shadow-size $shadow-size rgba(0,0,0, $shadow-opacity);
 }
 
-/* mixins for Note Enchantee pages*/
-@mixin note-name ($font-size){
+/* mixins for NOTE ENCHANTEE */
+@mixin note-name ($font-size){/*restaurant name formatting*/
     font-family: $note-name-font;
     color: $note-txt-clr;
     font-size: $font-size;
 }
 
-@mixin note-menu {
+@mixin note-menu {/*"menu" on home page formatting*/
     font-family: $note-menu-font;
     color: $note-txt-clr;
     font-size: $menu-size-home;
     text-transform: uppercase;
 }
 
-@mixin music-note ($font-size) {
+@mixin music-note ($font-size) {/*music note formatting*/
     font-family: $music-font;
     background: linear-gradient(to right bottom, $music-clr-drk 0%, $music-clr-lgt 100%);
 	-webkit-background-clip: text;
@@ -38,8 +39,8 @@
     font-size: $font-size;
 }
 
-/*Mixins for chic a la francaise pages */
-@mixin chic-name ($font-size){
+/*Mixins for CHIC A LA FRANCAISE */
+@mixin chic-name ($font-size){/*restaurant name formatting*/
     background: linear-gradient(to right bottom, $chic-txt-clr-or 0%, $chic-txt-clr-pu 100%);
 	        -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
@@ -47,14 +48,14 @@
             font-size: $font-size;
 }
 
-@mixin chic-menu{
+@mixin chic-menu{/*"menu" on home page formatting*/
     font-family: $chic-menu-font;
     color: $chic-txt-clr-or;
     font-size: $menu-size-home;
 }
 
-/* mixins for delice des papilles pages*/
-@mixin delice-name ($font-size){
+/* mixins for DELICE DES PAPILLES*/
+@mixin delice-name ($font-size){/*restaurant name formatting*/
     background: linear-gradient(to right, $delice-txt-clr-drk 0%, 30%, $delice-txt-clr-lgt 100%);
 	-webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -62,24 +63,25 @@
     font-size: $font-size;
 }
 
-/*mixins for palette du gout pages */
-@mixin palette-name ($font-size){
-    background: linear-gradient(to right bottom, $palette-txt-clr-1 0%, $palette-txt-clr-2 100%);
+/*mixins for PALETTE DU GOUT */
+@mixin palette-name ($font-size){/*restaurant name formatting*/
+    background: linear-gradient(to right bottom, $palette-txt-clr-drk 0%, $palette-txt-clr-lgt 100%);
 	-webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-family: $palette-name-font;
     font-size: $font-size;
 }
 
-/*Mixins for delice & papille menu */
-@mixin del-pal-menu ($color) {
+/* SHARED Mixins for DELICE DES PAPILLES & PALETTE DU GOUT */
+@mixin del-pal-menu ($color) {/*"menu" on home page formatting*/
     font-family: $del-pal-menu;
     color: $color;
     font-size: $menu-size-home;
 }
 
-/*Mixin for underlining course names in menu pages*/
-@mixin underline ($color: black, $width:50%){
+/*Mixin for underlining course names in menu pages - 
+necessary for animation*/
+@mixin underline ($color: $pal-del-item-clr, $width:50%){
     content:"";
     border-bottom: 5px solid $color;
     position: absolute;
@@ -90,7 +92,7 @@
     transition: transform 400ms;
 }
 
-/*media query mixin for responsiveness*/
+/*RESPONSIVE - media query mixin for different screen sizes*/
 @mixin small-screen{
     @media all and (max-width: 1000px){@content};
 }

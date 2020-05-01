@@ -1,25 +1,27 @@
+/*LAYOUT specific to the NOTE ENCHANTEE page*/
 .main--note{
     background-color: $note-bg-clr;
-    .h2{
+    .h2{/*settings for the course names*/
         @include note-name ($courses-font-size);
         font-size: $courses-font-size;
         position: relative;
         @include very-small-screen{
             font-size: 0.7*$courses-font-size;
         }
-        &--starters::before{/*add line under course titles ready for animation*/
+        &--starters::before{/*add line under course titles ready for animation- 
+            one per course as all different lengths*/
            @include underline ($note-txt-clr, 125px); 
-           @include very-small-screen{
+           @include very-small-screen{/*reduce line length to match smaller writing used for very small screens*/
                @include underline ($note-txt-clr, 85px);
            }
         }
-        &--courses::before{/*add line under course titles ready for animation*/
+        &--courses::before{
             @include underline ($note-txt-clr, 220px); 
             @include very-small-screen{
                 @include underline ($note-txt-clr, 155px);
             }
         }
-        &--desert::before{/*add line under course titles ready for animation*/
+        &--desert::before{
             @include underline ($note-txt-clr, 280px); 
             @include very-small-screen{
                 @include underline ($note-txt-clr, 195px);
@@ -29,17 +31,14 @@
             transform:scaleX(1);
         }
     }
-    p{
+    p{/*a different fornt is used for the items than the restaurant and course names for this page*/
         font-family: $note-items-font;  
-      }
-      .price{
-          font-weight: bold;
       }
 }
 
-.resto-header--note {
+.resto-header--note {/*settings of restaurant header specific to the note page*/
     padding-top: 0%;
-    strong{
+    strong{/*settings for the music note specific to the note page*/
         @include music-note (7rem);
     }
     h1{
@@ -51,7 +50,9 @@
     }
 }
 
-.resto-footer{
+.resto-footer{/*settings for restaurant footer - only present for the note enchantee page*/
+    text-align: center;
+    padding-bottom: 10%;
     p{
         @include note-name(2.5rem);
         @include very-small-screen{
