@@ -1,0 +1,46 @@
+.main--delice{
+    background-color: $delice-bg-clr;
+    font-family: $del-pal-item-font;
+    font-size: $items-font-size;
+    .h2{
+        font-size: $courses-font-size;
+        position: relative;
+        @include very-small-screen{
+            font-size: 0.7*$courses-font-size;
+        }
+        &--starters::before{/*add line under course titles ready for animation*/
+           @include underline ($pal-del-item-clr, 320px); 
+           @include very-small-screen{
+            @include underline ($pal-del-item-clr, 230px);
+        }
+        }
+        &--courses::before{/*add line under course titles ready for animation*/
+            @include underline ($pal-del-item-clr, 300px);
+            @include very-small-screen{
+                @include underline ($pal-del-item-clr, 210px);
+            } 
+         }
+         &--desert::before{/*add line under course titles ready for animation*/
+            @include underline ($pal-del-item-clr, 280px); 
+            @include very-small-screen{
+                @include underline ($pal-del-item-clr, 210px);
+            } 
+         }
+        &:hover::before{/*add hover animations*/
+            transform:scaleX(1);
+        }
+        
+    }
+    .price{
+        font-weight: bold;
+    }
+}
+
+.resto-header--delice {
+    h1{
+        @include delice-name(1.5*$resto-size-menu);
+        @include very-small-screen{
+            font-size: 0.9*$resto-size-menu;
+        }
+    }
+}

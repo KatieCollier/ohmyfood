@@ -1,36 +1,190 @@
 /* FONTS */
-/* Font for omf logo */
+/* Font for omf logo - e.g. header */
 @font-face {
     font-family: 'colaborate-mediumregular';
-    src: url('fonts/ColabMed-webfont.eot');
-    src: url('fonts/ColabMed-webfont.eot?#iefix') format('embedded-opentype'),
-         url('fonts/ColabMed-webfont.woff2') format('woff2'),
-         url('fonts/ColabMed-webfont.woff') format('woff'),
-         url('fonts/ColabMed-webfont.ttf') format('truetype'),
-         url('fonts/ColabMed-webfont.svg#colaborate-mediumregular') format('svg');
+    src: url('fonts/colaborate_medium_macroman/ColabMed-webfont.eot');
+    src: url('fonts/colaborate_medium_macroman/ColabMed-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/colaborate_medium_macroman/ColabMed-webfont.woff2') format('woff2'),
+         url('fonts/colaborate_medium_macroman/ColabMed-webfont.woff') format('woff'),
+         url('fonts/colaborate_medium_macroman/ColabMed-webfont.ttf') format('truetype'),
+         url('fonts/colaborate_medium_macroman/ColabMed-webfont.svg#colaborate-mediumregular') format('svg');
     font-weight: normal;
     font-style: normal;
 
 }
 
-/* Font for main omf site */
+/* Font for main omf site - e.g. buttons */
 @font-face {
     font-family: 'kanitregular';
-    src: url('fonts/kanit-regular-webfont.eot');
-    src: url('fonts/kanit-regular-webfont.eot?#iefix') format('embedded-opentype'),
-         url('fonts/kanit-regular-webfont.woff2') format('woff2'),
-         url('fonts/kanit-regular-webfont.woff') format('woff'),
-         url('fonts/kanit-regular-webfont.ttf') format('truetype'),
-         url('fonts/kanit-regular-webfont.svg#kanitregular') format('svg');
+    src: url('fonts/kanit_regular_macroman/kanit-regular-webfont.eot');
+    src: url('fonts/kanit_regular_macroman/kanit-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/kanit_regular_macroman/kanit-regular-webfont.woff2') format('woff2'),
+         url('fonts/kanit_regular_macroman/kanit-regular-webfont.woff') format('woff'),
+         url('fonts/kanit_regular_macroman/kanit-regular-webfont.ttf') format('truetype'),
+         url('fonts/kanit_regular_macroman/kanit-regular-webfont.svg#kanitregular') format('svg');
     font-weight: normal;
     font-style: normal;
 
 }
 
-/*Establishing fonts*/
-$omf-font: "colaborate-mediumregular";
-$site-font: "kanitregular";
+/*Note font*/
+@font-face {
+    font-family: 'merienda';
+        src: url('fonts/merienda/Merienda-Bold.ttf') format('truetype');
+        font-weight: normal;
+        font-style: normal;
+    }
 
+/*Note menu font*/
+@font-face {
+    font-family: 'komika_textregular';
+    src: url('fonts/komikatext_regular_macroman/KOMTXT__-webfont.eot');
+    src: url('fonts/komikatext_regular_macroman/KOMTXT__-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/komikatext_regular_macroman/KOMTXT__-webfont.woff2') format('woff2'),
+         url('fonts/komikatext_regular_macroman/KOMTXT__-webfont.woff') format('woff'),
+         url('fonts/komikatext_regular_macroman/KOMTXT__-webfont.ttf') format('truetype'),
+         url('fonts/komikatext_regular_macroman/KOMTXT__-webfont.svg#komika_textregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* chic font */
+@font-face {
+font-family: 'croissant-one';
+    src: url('fonts/croissant-one/CroissantOne-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* chic menu font*/
+@font-face {
+    font-family: 'serif-beta';
+        src: url('fonts/serif12-beta/Serif12Beta-Bold.otf');
+        font-weight: normal;
+        font-style: normal;
+    }
+
+/* delice font*/
+@font-face {
+    font-family: 'dancing-script';
+        src: url('fonts/dancing-script-ot/dancing-script-ot.otf');
+        font-weight: normal;
+        font-style: normal;
+    }
+
+/* palette font*/
+@font-face {
+    font-family: 'alegra-sans';
+        src: url('fonts/alegreya-sans/AlegreyaSans-Italic.otf');
+        font-weight: normal;
+        font-style: normal;
+    }
+
+/*delice and palette menu*/
+@font-face {
+    font-family: 'montezregular';
+    src: url('fonts/montez_regular_macroman/Montez-Regular-webfont.eot');
+    src: url('fonts/montez_regular_macroman/Montez-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/montez_regular_macroman/Montez-Regular-webfont.woff2') format('woff2'),
+         url('fonts/montez_regular_macroman/Montez-Regular-webfont.woff') format('woff'),
+         url('fonts/montez_regular_macroman/Montez-Regular-webfont.ttf') format('truetype'),
+         url('fonts/montez_regular_macroman/Montez-Regular-webfont.svg#montezregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/*music note font*/
+@font-face {
+    font-family: 'noto-sans';
+        src: url('fonts/Noto_Sans/NotoSans-Italic.ttf') format('truetype');
+        font-weight: normal;
+        font-style: normal;
+ }
+
+/* note items font*/
+@font-face {
+    font-family: 'sorts_mill_goudyitalic';
+    src: url('fonts/sortsmillgoudy_italic_macroman/GoudyStM-Italic-webfont.eot');
+    src: url('fonts/sortsmillgoudy_italic_macroman/GoudyStM-Italic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/sortsmillgoudy_italic_macroman/GoudyStM-Italic-webfont.woff2') format('woff2'),
+         url('fonts/sortsmillgoudy_italic_macroman/GoudyStM-Italic-webfont.woff') format('woff'),
+         url('fonts/sortsmillgoudy_italic_macroman/GoudyStM-Italic-webfont.ttf') format('truetype'),
+         url('fonts/sortsmillgoudy_italic_macroman/GoudyStM-Italic-webfont.svg#sorts_mill_goudyitalic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/*delice items font*/
+@font-face {
+    font-family: 'andika-italic';
+        src: url('fonts/andika-basic/AndikaNewBasic-I.ttf') format('truetype');
+        font-weight: normal;
+        font-style: normal;
+ }
+
+/*DEFINING FONTS*/
+$header-font: "colaborate-mediumregular"; /*for omf header*/
+$omf-font: "kanitregular"; /* for omf text other than the header*/
+$note-name-font: "merienda"; /*font for note enchantee's name - home and menu pages*/
+$note-menu-font: "komika_textregular";/*font for "menu" of note enchantee - home page*/
+$note-items-font: "sorts_mill_goudyitalic"; /*font for items on menu of note enchantee - menu page*/
+$chic-name-font: "croissant-one"; /*font for chic francaise's name - home and menu pages*/
+$chic-menu-font: "serif-beta";/*font for "menu" of chic francaise - home page - & for items on menu page*/
+$delice-name-font: "dancing-script";/*font for delice papille's name - home and menu pages*/
+$del-pal-item-font: "andika-italic";/*font for items on menu of delice paille and palette gout - menu page*/
+$palette-name-font: "alegra-sans";/*font for palette gout's name - home and menu pages*/
+$del-pal-menu: "montezregular";/*font for "menu" of delice papille and palette gout - home page*/
+$music-font: "noto-sans";/* for the music note for note enchantee*/
+
+/*FONT SIZES*/
+/*home page*/
+$resto-size-home: 2rem;
+$menu-size-home: 3rem;
+$music-size-home: 3rem;
+$soon-font-size:2.2rem;
+$footer-font-size: 1.4rem;
+$resp-font-size: 7vw;
+/*menu pages*/
+$resto-size-menu: 3rem;
+$courses-font-size: 2rem;
+$items-font-size: 1.5rem;
+
+/*DEFINING COLOURS*/
 /* Colours */
-$main-bg-color: #579c87;
-$main-txt-color: #fdcb46;
+$main-bg-color: #579c87; /*background color for header, footer & buttons*/
+$main-txt-color: #fdcb46; /*text color omf text*/
+$note-txt-clr: #3c1218;/*text color for note enchantee*/
+$note-bg-clr:  #fcdfdb;/*background colour for note enchantee*/
+$music-clr-drk: #f04a5e;/*darkest colour of note*/
+$music-clr-lgt: #f78f6a;/*lightest color of note*/
+$chic-txt-clr-or: #c77412;/*orange color of chic francaise title*/
+$chic-txt-clr-pu: #905bfd;/*purple color of chic francaise title*/
+$chic-bg-clr: #fff5fe;/*background color for chic francaise*/
+$chic-items-starters: #c67412;/*text color for chic francaise starters*/
+$chic-items-course: #a56799;/*text color for chic francaise main courses*/
+$chic-items-desert: #6e4ccc;/*text color for chic francaise deserts*/
+$delice-txt-clr-drk: #0023db;/*darkest color of delice papille name*/
+$delice-txt-clr-lgt: #108dfb;/*lightest color of delice papille name*/
+$delice-bg-clr: #eef0f0;/*background color for delice papille*/
+$palette-txt-clr-1: #3d9339;
+$palette-txt-clr-2: #bfff7e;
+$palette-bg-clr: #fdfffd;
+$pal-del-item-clr: black;
+
+
+/*shadows home page*/
+$shadow-opacity: 0.1;
+
+/* ELEMENT SIZES home page*/
+/* sizes for the restaurant squares on the home page*/
+$square-width: 450px;
+$square-height: 570px;
+$resp-square-width: 90vw;
+$shadow-size: 7px;
+
+/*ANIMATIONS*/
+/*animation durations*/
+$dots-dur: 2.5s;
+$dots-delay: 500ms;
+/*sizes for soon animation*/
+$dot-size:5px;

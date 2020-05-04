@@ -1,4 +1,47 @@
-.header{
-    @include omf-txt-clr;
-    font-family: $omf-fontarial;
+main{
+    width: 80%;
+    margin: 5% 10% 7% 10%;
+    @include small-screen{
+        width: 100%;
+        margin:auto;
+    }
+}
+
+a{
+    text-decoration: none;
+}
+
+header{
+        height: 100px;
+        background-color: $main-bg-color;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        font-size: 2.3rem;
+        letter-spacing: -5px;
+        color: $main-txt-color;
+        font-family: $header-font;
+        text-align: center;
+        margin-bottom: 50px;     
+    a{
+        text-decoration: none;
+        color: $main-txt-color;
+    }
+    @include small-screen{
+        font-size: 1.5rem;
+        letter-spacing: -4px;
+    }
+}
+
+footer{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    max-width: 1200px;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: $main-bg-color;
 }

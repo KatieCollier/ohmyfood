@@ -1,0 +1,73 @@
+.main--note{
+    background-color: $note-bg-clr;
+    .h2{
+        @include note-name ($courses-font-size);
+        font-size: $courses-font-size;
+        position: relative;
+        @include very-small-screen{
+            font-size: 0.7*$courses-font-size;
+        }
+        &--starters::before{/*add line under course titles ready for animation*/
+           @include underline ($note-txt-clr, 125px); 
+           @include very-small-screen{
+               @include underline ($note-txt-clr, 85px);
+           }
+        }
+        &--courses::before{/*add line under course titles ready for animation*/
+            @include underline ($note-txt-clr, 220px); 
+            @include very-small-screen{
+                @include underline ($note-txt-clr, 155px);
+            }
+        }
+        &--desert::before{/*add line under course titles ready for animation*/
+            @include underline ($note-txt-clr, 280px); 
+            @include very-small-screen{
+                @include underline ($note-txt-clr, 195px);
+            }
+        }
+        &:hover::before{/*add hover animations*/
+            transform:scaleX(1);
+        }
+    }
+    p{
+        font-family: $note-items-font;  
+      }
+      .price{
+          font-weight: bold;
+      }
+}
+
+.resto-header--note {
+    padding-top: 0%;
+    strong{
+        @include music-note (7rem);
+    }
+    h1{
+        @include note-name ($resto-size-menu);
+        margin: 0%;
+        @include very-small-screen{
+            font-size: 0.6*$resto-size-menu;
+        }
+    }
+}
+
+.resto-footer{
+    p{
+        @include note-name(2.5rem);
+        @include very-small-screen{
+            font-size: 1.2rem;
+        }
+    }
+    strong{
+        @include music-note(4rem);
+        @include very-small-screen{
+            font-size: 2rem;
+        }
+    }
+}
+
+
+
+
+
+
