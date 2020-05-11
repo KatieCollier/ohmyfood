@@ -106,8 +106,6 @@
         }
     }
     &_name{/*set properties common to all restaurant names within the boxes*/
-        width: 420px;
-        height: 210px;
         text-align: center;
         &:hover{/*add animation for restaurant names*/
             animation: enlarge 400ms forwards;
