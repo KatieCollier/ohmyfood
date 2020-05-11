@@ -1,26 +1,28 @@
+/*LAYOUT specific to the DELICE DES PAPILLES page*/
 .main--delice{
     background-color: $delice-bg-clr;
     font-family: $del-pal-item-font;
     font-size: $items-font-size;
-    .h2{
+    .h2{/*settings for the course names*/
         font-size: $courses-font-size;
         position: relative;
         @include very-small-screen{
             font-size: 0.7*$courses-font-size;
         }
-        &--starters::before{/*add line under course titles ready for animation*/
+        &--starters::before{/*add line under course titles ready for animation- 
+            one per course as all different lengths*/
            @include underline ($pal-del-item-clr, 320px); 
-           @include very-small-screen{
+           @include very-small-screen{/*reduce line length to match smaller writing used for very small screens*/
             @include underline ($pal-del-item-clr, 230px);
         }
         }
-        &--courses::before{/*add line under course titles ready for animation*/
+        &--courses::before{
             @include underline ($pal-del-item-clr, 300px);
             @include very-small-screen{
                 @include underline ($pal-del-item-clr, 210px);
             } 
          }
-         &--desert::before{/*add line under course titles ready for animation*/
+         &--desert::before{
             @include underline ($pal-del-item-clr, 280px); 
             @include very-small-screen{
                 @include underline ($pal-del-item-clr, 210px);
@@ -31,12 +33,9 @@
         }
         
     }
-    .price{
-        font-weight: bold;
-    }
 }
 
-.resto-header--delice {
+.resto-header--delice {/*settings of restaurant header specific to the delice page*/
     h1{
         @include delice-name(1.5*$resto-size-menu);
         @include very-small-screen{

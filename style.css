@@ -1,3 +1,4 @@
+/*VARIABLES*/
 /* FONTS */
 /* Font for omf logo - e.g. header */
 @font-face {
@@ -15,54 +16,18 @@
   font-weight: normal;
   font-style: normal;
 }
-/*Note font*/
+/*Note restaurant name font*/
 @font-face {
   font-family: "merienda";
   src: url("fonts/merienda/Merienda-Bold.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
-/*Note menu font*/
+/*Note "menu" font*/
 @font-face {
   font-family: "komika_textregular";
   src: url("fonts/komikatext_regular_macroman/KOMTXT__-webfont.eot");
   src: url("fonts/komikatext_regular_macroman/KOMTXT__-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/komikatext_regular_macroman/KOMTXT__-webfont.woff2") format("woff2"), url("fonts/komikatext_regular_macroman/KOMTXT__-webfont.woff") format("woff"), url("fonts/komikatext_regular_macroman/KOMTXT__-webfont.ttf") format("truetype"), url("fonts/komikatext_regular_macroman/KOMTXT__-webfont.svg#komika_textregular") format("svg");
-  font-weight: normal;
-  font-style: normal;
-}
-/* chic font */
-@font-face {
-  font-family: "croissant-one";
-  src: url("fonts/croissant-one/CroissantOne-Regular.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal;
-}
-/* chic menu font*/
-@font-face {
-  font-family: "serif-beta";
-  src: url("fonts/serif12-beta/Serif12Beta-Bold.otf");
-  font-weight: normal;
-  font-style: normal;
-}
-/* delice font*/
-@font-face {
-  font-family: "dancing-script";
-  src: url("fonts/dancing-script-ot/dancing-script-ot.otf");
-  font-weight: normal;
-  font-style: normal;
-}
-/* palette font*/
-@font-face {
-  font-family: "alegra-sans";
-  src: url("fonts/alegreya-sans/AlegreyaSans-Italic.otf");
-  font-weight: normal;
-  font-style: normal;
-}
-/*delice and palette menu*/
-@font-face {
-  font-family: "montezregular";
-  src: url("fonts/montez_regular_macroman/Montez-Regular-webfont.eot");
-  src: url("fonts/montez_regular_macroman/Montez-Regular-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/montez_regular_macroman/Montez-Regular-webfont.woff2") format("woff2"), url("fonts/montez_regular_macroman/Montez-Regular-webfont.woff") format("woff"), url("fonts/montez_regular_macroman/Montez-Regular-webfont.ttf") format("truetype"), url("fonts/montez_regular_macroman/Montez-Regular-webfont.svg#montezregular") format("svg");
   font-weight: normal;
   font-style: normal;
 }
@@ -81,7 +46,43 @@
   font-weight: normal;
   font-style: normal;
 }
-/*delice items font*/
+/* chic restaurant name font */
+@font-face {
+  font-family: "croissant-one";
+  src: url("fonts/croissant-one/CroissantOne-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+/* chic "menu" font*/
+@font-face {
+  font-family: "serif-beta";
+  src: url("fonts/serif12-beta/Serif12Beta-Bold.otf");
+  font-weight: normal;
+  font-style: normal;
+}
+/* delice restaurant name font*/
+@font-face {
+  font-family: "dancing-script";
+  src: url("fonts/dancing-script-ot/dancing-script-ot.otf");
+  font-weight: normal;
+  font-style: normal;
+}
+/* palette restaurant name font*/
+@font-face {
+  font-family: "alegra-sans";
+  src: url("fonts/alegreya-sans/AlegreyaSans-Italic.otf");
+  font-weight: normal;
+  font-style: normal;
+}
+/*delice and palette "menu" font*/
+@font-face {
+  font-family: "montezregular";
+  src: url("fonts/montez_regular_macroman/Montez-Regular-webfont.eot");
+  src: url("fonts/montez_regular_macroman/Montez-Regular-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/montez_regular_macroman/Montez-Regular-webfont.woff2") format("woff2"), url("fonts/montez_regular_macroman/Montez-Regular-webfont.woff") format("woff"), url("fonts/montez_regular_macroman/Montez-Regular-webfont.ttf") format("truetype"), url("fonts/montez_regular_macroman/Montez-Regular-webfont.svg#montezregular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+/*delice and palette items font*/
 @font-face {
   font-family: "andika-italic";
   src: url("fonts/andika-basic/AndikaNewBasic-I.ttf") format("truetype");
@@ -121,21 +122,30 @@
 /*darkest color of delice papille name*/
 /*lightest color of delice papille name*/
 /*background color for delice papille*/
-/*shadows home page*/
-/* ELEMENT SIZES home page*/
+/*darkest color of palette gout name*/
+/*lightest color of palette gout name*/
+/*background color for palette gout*/
+/*text color for delice and palette menu items*/
+/* ELEMENT SIZES */
 /* sizes for the restaurant squares on the home page*/
+/*for very small screens*/
+/*shadows*/
 /*ANIMATIONS*/
 /*animation durations*/
 /*sizes for soon animation*/
-/* mixin for format of omf sections, excluding header*/
+/*MIXINS to be reused throughout the website*/
+/* mixin for format of omf sections- excluding header*/
 /*mixin for box shadows*/
-/* mixins for Note Enchantee pages*/
-/*Mixins for chic a la francaise pages */
-/* mixins for delice des papilles pages*/
-/*mixins for palette du gout pages */
-/*Mixins for delice & papille menu */
-/*Mixin for underlining course names in menu pages*/
-/*media query mixin for responsiveness*/
+/* mixins for NOTE ENCHANTEE */
+/*Mixins for CHIC A LA FRANCAISE */
+/* mixins for DELICE DES PAPILLES*/
+/*mixins for PALETTE DU GOUT */
+/* SHARED Mixins for DELICE DES PAPILLES & PALETTE DU GOUT */
+/*Mixin for underlining course names in menu pages - 
+necessary for animation*/
+/*RESPONSIVE - media query mixin for different screen sizes*/
+/*KEYFRAMES for ANIMATIONS*/
+/*animation to wiggle the legal and contact buttons in the footer*/
 @keyframes wiggle {
   0% {
     transform: rotate(0deg);
@@ -153,6 +163,7 @@
     transform: rotate(0deg);
   }
 }
+/*animation to enlarge restaurant names in the boxes and make them partially transparent - home page*/
 @keyframes enlarge {
   0% {
     transform: scale(1);
@@ -163,6 +174,8 @@
     opacity: 0.6;
   }
 }
+/* three keyframes necessary to animate the suspension marks in the soon button - home page*/
+/* for dot 1*/
 @keyframes appear1 {
   0% {
     transform: scale(0);
@@ -180,6 +193,7 @@
     transform: scale(0);
   }
 }
+/*for dot 2*/
 @keyframes appear2 {
   0% {
     transform: scale(0);
@@ -200,6 +214,7 @@
     transform: scale(0);
   }
 }
+/*for dot 3*/
 @keyframes appear3 {
   0% {
     transform: scale(0);
@@ -221,13 +236,77 @@
   }
 }
 body {
+  /*general setting for all pages*/
   width: 100%;
   max-width: 1200px;
   margin: auto;
   box-sizing: border-box;
 }
 
+/*LAYOUT concerning ALL PAGES*/
+main {
+  /*set size for the main part of the page - excluding header and footer*/
+  width: 80%;
+  margin: 5% 10% 7% 10%;
+}
+@media all and (max-width: 1000px) {
+  main {
+    /*adjust for smaller screens*/
+    width: 100%;
+    margin: auto;
+  }
+}
+
+a {
+  /*make sure that all links are not underlined - all other link properties 
+    set individually as they (nearly) all have different font, colors and sizes*/
+  text-decoration: none;
+}
+
+header {
+  /* settings for OMF header visible on all pages*/
+  height: 100px;
+  background-color: #579c87;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 2.3rem;
+  letter-spacing: -5px;
+  color: #fdcb46;
+  font-family: "colaborate-mediumregular";
+  text-align: center;
+  margin-bottom: 50px;
+}
+header a {
+  color: #fdcb46;
+  /*otherwise link in blue*/
+}
+@media all and (max-width: 1000px) {
+  header {
+    font-size: 1.5rem;
+    letter-spacing: -3px;
+    /*necessary to stop all letters fusing 
+    together with the smaller font*/
+  }
+}
+
+footer {
+  /*settings for OMF footer visible on all pages*/
+  position: fixed;
+  /* stays at bottom of page even when scrolling*/
+  bottom: 0;
+  width: 100%;
+  max-width: 1200px;
+  height: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #579c87;
+}
+
 .btn {
+  /*settings for to buttom on footer - legal and contact*/
   padding: 2rem;
 }
 @media all and (max-width: 1000px) {
@@ -245,68 +324,18 @@ body {
 }
 @media all and (max-width: 1000px) {
   .btn a {
-    font-size: 1rem;
+    font-size: 0.98rem;
   }
 }
 .btn:hover {
   animation: wiggle 200ms ease-in-out 3;
+  /*add animation*/
 }
 
-main {
-  width: 80%;
-  margin: 5% 10% 7% 10%;
-}
-@media all and (max-width: 1000px) {
-  main {
-    width: 100%;
-    margin: auto;
-  }
-}
-
-a {
-  text-decoration: none;
-}
-
-header {
-  height: 100px;
-  background-color: #579c87;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  font-size: 2.3rem;
-  letter-spacing: -5px;
-  color: #fdcb46;
-  font-family: "colaborate-mediumregular";
-  text-align: center;
-  margin-bottom: 50px;
-}
-header a {
-  text-decoration: none;
-  color: #fdcb46;
-}
-@media all and (max-width: 1000px) {
-  header {
-    font-size: 1.5rem;
-    letter-spacing: -4px;
-  }
-}
-
-footer {
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-  max-width: 1200px;
-  height: 50px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  background-color: #579c87;
-}
-
+/*LAYOUT for HOME PAGE */
 .main-home {
   /* set the main part of the home page so that restaurant boxes 
-  are above soon button and all is centered*/
+  are above the soon button and all is centered*/
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -314,9 +343,8 @@ footer {
   margin: auto;
 }
 
-.article-home {
-  /*set part containing restaurant boxes so that they are 
-  displayed in rows but sent back to the line if the containing part is not big enough*/
+.boxes {
+  /* put the two rows of boxes one on top of the other*/
   margin: auto;
   display: flex;
   flex-direction: column;
@@ -325,9 +353,11 @@ footer {
 }
 
 .row {
+  /* put boxes in each row side by side... */
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  /*... unless screen is too small: then put them one on top of the other*/
 }
 @media all and (max-width: 1000px) {
   .row {
@@ -353,10 +383,11 @@ footer {
   }
 }
 .resto--note {
-  /*set properties for restaurant box Nb1- note enchantee*/
+  /*set specific properties for restaurant box Nb1- note enchantee*/
   background-color: #fcdfdb;
 }
 .resto--note strong {
+  /*music note formatting*/
   font-family: "noto-sans";
   background: linear-gradient(to right bottom, #f04a5e 0%, #f78f6a 100%);
   -webkit-background-clip: text;
@@ -364,6 +395,7 @@ footer {
   font-size: 3rem;
 }
 .resto--note h2 {
+  /*restaurant name formatting*/
   font-family: "merienda";
   color: #3c1218;
   font-size: 2rem;
@@ -376,6 +408,7 @@ footer {
   }
 }
 .resto--note p {
+  /*"menu" on home page formatting*/
   font-family: "komika_textregular";
   color: #3c1218;
   font-size: 3rem;
@@ -383,10 +416,11 @@ footer {
   margin: 0px;
 }
 .resto--chic {
-  /*set properties for restaurant box Nb2- chic francaise*/
+  /*set specific properties for restaurant box Nb2- chic francaise*/
   background-color: #fff5fe;
 }
 .resto--chic h2 {
+  /*restaurant name formatting*/
   background: linear-gradient(to right bottom, #c77412 0%, #905bfd 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -400,6 +434,7 @@ footer {
   }
 }
 .resto--chic p {
+  /*"menu" on home page formatting*/
   font-family: "serif-beta";
   color: #c77412;
   font-size: 3rem;
@@ -410,10 +445,11 @@ footer {
   }
 }
 .resto--delice {
-  /*set properties for restaurant box Nb3- delice papilles*/
+  /*set specific properties for restaurant box Nb3- delice papilles*/
   background-color: #eef0f0;
 }
 .resto--delice h2 {
+  /*restaurant name formatting*/
   background: linear-gradient(to right, #0023db 0%, 30%, #108dfb 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -427,6 +463,7 @@ footer {
   }
 }
 .resto--delice p {
+  /*"menu" on home page formatting*/
   font-family: "montezregular";
   color: #108dfb;
   font-size: 3rem;
@@ -437,10 +474,11 @@ footer {
   }
 }
 .resto--palette {
-  /*set properties for restaurant box Nb4- palette gout*/
+  /*set specific properties for restaurant box Nb4- palette gout*/
   background-color: #fdfffd;
 }
 .resto--palette h2 {
+  /*restaurant name formatting*/
   background: linear-gradient(to right bottom, #3d9339 0%, #bfff7e 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -454,6 +492,7 @@ footer {
   }
 }
 .resto--palette p {
+  /*"menu" on home page formatting*/
   font-family: "montezregular";
   color: #3d9339;
   font-size: 3rem;
@@ -465,8 +504,6 @@ footer {
 }
 .resto_name {
   /*set properties common to all restaurant names within the boxes*/
-  width: 420px;
-  height: 210px;
   text-align: center;
 }
 .resto_name:hover {
@@ -475,7 +512,7 @@ footer {
 }
 
 .soon {
-  /*set properties for soon button - doesn't do anything*/
+  /*set properties for soon button - NB: doesn't do anything*/
   background-color: #579c87;
   color: #fdcb46;
   font-family: "kanitregular";
@@ -530,7 +567,8 @@ footer {
   }
 }
 .dot--1 {
-  /*add animation to suspension marks*/
+  /*add animation to suspension marks - different animation for each 
+  dot allows them to remain synchronised on a infinite loop*/
   animation: appear1 2.5s 500ms both infinite;
 }
 .dot--2 {
@@ -540,7 +578,10 @@ footer {
   animation: appear3 2.5s 500ms both infinite;
 }
 
+/*LAYOUT for MENU PAGES*/
 .main-menu {
+  /*settings that apply to all menu pages - 
+  box shadow, general layout, items font size*/
   box-shadow: 7px 7px 7px rgba(0, 0, 0, 0.1), -7px 7px 7px rgba(0, 0, 0, 0.1), -7px -7px 7px rgba(0, 0, 0, 0.1), 7px -7px 7px rgba(0, 0, 0, 0.1);
 }
 @media all and (max-width: 1000px) {
@@ -550,12 +591,14 @@ footer {
   }
 }
 .main-menu article {
+  /*display starters, main course and deserts one above the other*/
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   padding: 5%;
 }
-.main-menu section {
+.main-menu .meal {
+  /*display the meal item next to its price*/
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -570,23 +613,34 @@ footer {
     font-size: 1.05rem;
   }
 }
+.main-menu .price {
+  /*set prices in bold for all menu pages*/
+  font-weight: bold;
+}
 
 .resto-header {
+  /*settings for the restaurant name*/
   text-align: center;
   padding-top: 2%;
 }
 
 .course-name {
+  /*settings for course names*/
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
 }
 .course-name h2 {
+  text-align: center;
+  margin: 0;
   white-space: nowrap;
+  /*stop course titles being split 
+  into several lines when screen gets smaller*/
 }
 
 img {
+  /*settings for decorative lines next to course names*/
   height: 14px;
   width: 200px;
 }
@@ -596,20 +650,13 @@ img {
   }
 }
 
-h2 {
-  text-align: center;
-  margin: 0;
-}
-
-.resto-footer {
-  text-align: center;
-  padding-bottom: 10%;
-}
-
+/*LAYOUT specific to the NOTE ENCHANTEE page*/
 .main--note {
   background-color: #fcdfdb;
 }
 .main--note .h2 {
+  /*settings for the course names*/
+  /*restaurant name formatting*/
   font-family: "merienda";
   color: #3c1218;
   font-size: 2rem;
@@ -622,7 +669,8 @@ h2 {
   }
 }
 .main--note .h2--starters::before {
-  /*add line under course titles ready for animation*/
+  /*add line under course titles ready for animation- 
+  one per course as all different lengths*/
   content: "";
   border-bottom: 5px solid #3c1218;
   position: absolute;
@@ -634,6 +682,7 @@ h2 {
 }
 @media all and (max-width: 500px) {
   .main--note .h2--starters::before {
+    /*reduce line length to match smaller writing used for very small screens*/
     content: "";
     border-bottom: 5px solid #3c1218;
     position: absolute;
@@ -645,7 +694,6 @@ h2 {
   }
 }
 .main--note .h2--courses::before {
-  /*add line under course titles ready for animation*/
   content: "";
   border-bottom: 5px solid #3c1218;
   position: absolute;
@@ -668,7 +716,6 @@ h2 {
   }
 }
 .main--note .h2--desert::before {
-  /*add line under course titles ready for animation*/
   content: "";
   border-bottom: 5px solid #3c1218;
   position: absolute;
@@ -695,16 +742,17 @@ h2 {
   transform: scaleX(1);
 }
 .main--note p {
+  /*a different fornt is used for the items than the restaurant and course names for this page*/
   font-family: "sorts_mill_goudyitalic";
-}
-.main--note .price {
-  font-weight: bold;
 }
 
 .resto-header--note {
+  /*settings of restaurant header specific to the note page*/
   padding-top: 0%;
 }
 .resto-header--note strong {
+  /*settings for the music note specific to the note page*/
+  /*music note formatting*/
   font-family: "noto-sans";
   background: linear-gradient(to right bottom, #f04a5e 0%, #f78f6a 100%);
   -webkit-background-clip: text;
@@ -712,6 +760,7 @@ h2 {
   font-size: 7rem;
 }
 .resto-header--note h1 {
+  /*restaurant name formatting*/
   font-family: "merienda";
   color: #3c1218;
   font-size: 3rem;
@@ -723,7 +772,13 @@ h2 {
   }
 }
 
+.resto-footer {
+  /*settings for restaurant footer - only present for the note enchantee page*/
+  text-align: center;
+  padding-bottom: 10%;
+}
 .resto-footer p {
+  /*restaurant name formatting*/
   font-family: "merienda";
   color: #3c1218;
   font-size: 2.5rem;
@@ -734,6 +789,7 @@ h2 {
   }
 }
 .resto-footer strong {
+  /*music note formatting*/
   font-family: "noto-sans";
   background: linear-gradient(to right bottom, #f04a5e 0%, #f78f6a 100%);
   -webkit-background-clip: text;
@@ -746,8 +802,11 @@ h2 {
   }
 }
 
+/*LAYOUT specific to the CHIC A LA FRANCAISE page */
 .main--chic {
   background-color: #fff5fe;
+  /*Sets the different colors for the different courses present on this page*/
+  /*settings for the course names... */
 }
 .main--chic .starters {
   color: #c67412;
@@ -759,9 +818,11 @@ h2 {
   color: #6e4ccc;
 }
 .main--chic .h2 {
+  /*... general to all courses*/
   font-family: "serif-beta";
   font-size: 1.9rem;
   position: relative;
+  /*...specific to each course type: starters, main course, desert*/
 }
 @media all and (max-width: 500px) {
   .main--chic .h2 {
@@ -769,7 +830,8 @@ h2 {
   }
 }
 .main--chic .h2--starters::before {
-  /*add line under course titles ready for animation*/
+  /*add line under course titles ready for animation- 
+  one per course as all different lengths*/
   content: "";
   border-bottom: 5px solid #c67412;
   position: absolute;
@@ -781,6 +843,7 @@ h2 {
 }
 @media all and (max-width: 500px) {
   .main--chic .h2--starters::before {
+    /*reduce line length to match smaller writing used for very small screens*/
     content: "";
     border-bottom: 5px solid #c67412;
     position: absolute;
@@ -792,7 +855,6 @@ h2 {
   }
 }
 .main--chic .h2--courses::before {
-  /*add line under course titles ready for animation*/
   content: "";
   border-bottom: 5px solid #a56799;
   position: absolute;
@@ -815,7 +877,6 @@ h2 {
   }
 }
 .main--chic .h2--desert::before {
-  /*add line under course titles ready for animation*/
   content: "";
   border-bottom: 5px solid #6e4ccc;
   position: absolute;
@@ -838,14 +899,15 @@ h2 {
   }
 }
 .main--chic .h2:hover::before {
+  /*add hover animations*/
   transform: scale(1);
 }
 
-.price {
-  font-weight: bold;
+.resto-header--chic {
+  /*settings of restaurant header specific to the chic page*/
 }
-
 .resto-header--chic h1 {
+  /*restaurant name formatting*/
   background: linear-gradient(to right bottom, #c77412 0%, #905bfd 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -858,12 +920,14 @@ h2 {
   }
 }
 
+/*LAYOUT specific to the DELICE DES PAPILLES page*/
 .main--delice {
   background-color: #eef0f0;
   font-family: "andika-italic";
   font-size: 1.5rem;
 }
 .main--delice .h2 {
+  /*settings for the course names*/
   font-size: 2rem;
   position: relative;
 }
@@ -873,7 +937,8 @@ h2 {
   }
 }
 .main--delice .h2--starters::before {
-  /*add line under course titles ready for animation*/
+  /*add line under course titles ready for animation- 
+  one per course as all different lengths*/
   content: "";
   border-bottom: 5px solid black;
   position: absolute;
@@ -885,6 +950,7 @@ h2 {
 }
 @media all and (max-width: 500px) {
   .main--delice .h2--starters::before {
+    /*reduce line length to match smaller writing used for very small screens*/
     content: "";
     border-bottom: 5px solid black;
     position: absolute;
@@ -896,7 +962,6 @@ h2 {
   }
 }
 .main--delice .h2--courses::before {
-  /*add line under course titles ready for animation*/
   content: "";
   border-bottom: 5px solid black;
   position: absolute;
@@ -919,7 +984,6 @@ h2 {
   }
 }
 .main--delice .h2--desert::before {
-  /*add line under course titles ready for animation*/
   content: "";
   border-bottom: 5px solid black;
   position: absolute;
@@ -945,11 +1009,12 @@ h2 {
   /*add hover animations*/
   transform: scaleX(1);
 }
-.main--delice .price {
-  font-weight: bold;
-}
 
+.resto-header--delice {
+  /*settings of restaurant header specific to the delice page*/
+}
 .resto-header--delice h1 {
+  /*restaurant name formatting*/
   background: linear-gradient(to right, #0023db 0%, 30%, #108dfb 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -962,14 +1027,14 @@ h2 {
   }
 }
 
+/*LAYOUT specific to the PALETTE DU GOUT page*/
 .main--palette {
-  /*set main properties for page excluing header and footer*/
   background-color: #fdfffd;
   font-family: "andika-italic";
   font-size: 1.5rem;
 }
 .main--palette .h2 {
-  /*set properties for course titles*/
+  /*settings for the course names*/
   font-size: 2rem;
   position: relative;
 }
@@ -979,7 +1044,8 @@ h2 {
   }
 }
 .main--palette .h2--starters::before {
-  /*add line under course titles ready for animation*/
+  /*add line under course titles ready for animation- 
+  one per course as all different lengths*/
   content: "";
   border-bottom: 5px solid black;
   position: absolute;
@@ -991,6 +1057,7 @@ h2 {
 }
 @media all and (max-width: 500px) {
   .main--palette .h2--starters::before {
+    /*reduce line length to match smaller writing used for very small screens*/
     content: "";
     border-bottom: 5px solid black;
     position: absolute;
@@ -1002,7 +1069,6 @@ h2 {
   }
 }
 .main--palette .h2--courses::before {
-  /*add line under course titles ready for animation*/
   content: "";
   border-bottom: 5px solid black;
   position: absolute;
@@ -1025,7 +1091,6 @@ h2 {
   }
 }
 .main--palette .h2--desert::before {
-  /*add line under course titles ready for animation*/
   content: "";
   border-bottom: 5px solid black;
   position: absolute;
@@ -1048,17 +1113,15 @@ h2 {
   }
 }
 .main--palette .h2:hover::before {
+  /*add hover animations*/
   transform: scaleX(1);
-}
-.main--palette .price {
-  /*make prices on list bold*/
-  font-weight: bold;
 }
 
 .resto-header--palette {
-  /*set properties and font for the restaurant name*/
+  /*settings of restaurant header specific to the palette page*/
 }
 .resto-header--palette h1 {
+  /*restaurant name formatting*/
   background: linear-gradient(to right bottom, #3d9339 0%, #bfff7e 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -1071,6 +1134,7 @@ h2 {
   }
 }
 
+/*LAYOUT specific to the LEGAL page*/
 .main-legal {
   padding: 10px;
 }
